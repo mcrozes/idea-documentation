@@ -1,0 +1,2 @@
+# Register a new AMI
+

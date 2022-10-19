@@ -10,6 +10,14 @@
 * [Share a virtual desktop](user-documentation/share-a-virtual-desktop.md)
 * [Virtual desktop scheduling](user-documentation/virtual-desktop-scheduling.md)
 
+## VDI Admins
+
+* [Sessions management](vdi-admins/sessions-management.md)
+* [Register a new AMI](vdi-admins/register-a-new-ami.md)
+* [Projects management](vdi-admins/projects-management.md)
+* [QUIC native support](vdi-admins/quic-native-support.md)
+* [Permissions management](vdi-admins/permissions-management.md)
+
 ## Technical
 
 * [Backend Architecture](technical/backend-architecture.md)
