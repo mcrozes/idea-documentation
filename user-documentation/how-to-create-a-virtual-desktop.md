@@ -1,4 +1,4 @@
-# How to create a virtual desktop
+# Create a virtual desktop
 
 {% hint style="info" %}
 To create a new IDEA Virtual Desktop, you must have installed the Virtual Desktop module. You can install the module on an existing IDEA cluster.
