@@ -2,7 +2,7 @@
 
 * [What is IDEA?](README.md)
 * [Architecture](architecture.md)
-* [Installation](installation/README.md)
+* [Installation](installation.md)
   * [Default installation](installation/default-installation.md)
   * [Use existing resources](installation/use-existing-resources.md)
 * [Modules](modules/README.md)
