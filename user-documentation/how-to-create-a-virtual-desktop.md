@@ -8,9 +8,9 @@ To create a new IDEA Virtual Desktop, you must have installed the Virtual Deskto
 
 To access the Virtual Desktop section, click "**Virtual Desktop**" on the left sidebar:
 
-![Access the Virtual Desktop section easily by clicking 'Virtual Desktops" on the left sidebar](<../.gitbook/assets/Screen Shot 2022-06-06 at 3.43.31 PM.png>)
+<figure><img src="../.gitbook/assets/Screen Shot 2022-10-21 at 9.54.11 PM.png" alt=""><figcaption></figcaption></figure>
 
-To launch your virtual desktop click <img src="../.gitbook/assets/Screen Shot 2022-06-06 at 6.42.23 PM.png" alt="" data-size="line">button. You will be prompted with a new modal asking you a couple of questions:
+To launch your virtual desktop click "Launch new Virtual Desktop" button. You will be prompted with a new modal asking you a couple of questions:
 
 * A name for your desktop
 * The operating system you want to use from:
