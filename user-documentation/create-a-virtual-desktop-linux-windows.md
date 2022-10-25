@@ -1,6 +1,4 @@
-# Create a virtual desktop
-
-## Create your Windows or Linux desktop
+# Create a virtual desktop (Linux/Windows)
 
 To access the Virtual Desktop section, click "**Virtual Desktops**" on the left sidebar:
 
