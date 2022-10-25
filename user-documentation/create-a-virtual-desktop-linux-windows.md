@@ -1,3 +1,7 @@
+---
+description: Create a powerful Linux or Windows virtual desktop in a single click
+---
+
 # Create a virtual desktop (Linux/Windows)
 
 To access the Virtual Desktop section, click "**Virtual Desktops**" on the left sidebar:
@@ -57,6 +61,6 @@ Click "**DCV Session File**" button to download your `.dcv` file. To open this f
 
 ## Retrieve Session Information
 
-Click <img src="../.gitbook/assets/image (2).png" alt="" data-size="line">then <img src="../.gitbook/assets/Screen Shot 2022-06-07 at 3.46.07 PM.png" alt="" data-size="line"> to retrieve your session information such as instance type, subnet id, operating system etc ...
+Click **Actions** then **Show Infos** to retrieve your session information such as instance type, subnet id, operating system etc ...
 
-![](<../.gitbook/assets/Screen Shot 2022-06-07 at 3.46.51 PM.png>)
+<figure><img src="../.gitbook/assets/Screen Shot 2022-10-25 at 2.07.20 PM.png" alt=""><figcaption><p>Get detailed information about your virtual desktop</p></figcaption></figure>

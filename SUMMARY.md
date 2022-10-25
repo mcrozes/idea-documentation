@@ -6,7 +6,7 @@
 ## User Documentation
 
 * [Create a virtual desktop (Linux/Windows)](user-documentation/create-a-virtual-desktop-linux-windows.md)
-* [Stop/Delete a virtual desktop](user-documentation/stop-delete-a-virtual-desktop.md)
+* [Stop/Delete/Hibernate a virtual desktop](user-documentation/stop-delete-hibernate-a-virtual-desktop.md)
 * [Modify a virtual desktop](user-documentation/modify-a-virtual-desktop.md)
 * [Share a virtual desktop](user-documentation/share-a-virtual-desktop.md)
 * [Virtual desktop scheduling](user-documentation/virtual-desktop-scheduling.md)
