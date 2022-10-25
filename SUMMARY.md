@@ -14,7 +14,7 @@
 ## VDI Admins
 
 * [Sessions management](vdi-admins/sessions-management.md)
-* [Register a new AMI](vdi-admins/register-a-new-ami.md)
+* [Software Stacks (AMIs)](vdi-admins/software-stacks-amis.md)
 * [Projects management](vdi-admins/projects-management.md)
 * [QUIC native support](vdi-admins/quic-native-support.md)
 * [Permissions management](vdi-admins/permissions-management.md)

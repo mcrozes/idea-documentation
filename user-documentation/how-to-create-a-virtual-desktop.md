@@ -1,35 +1,33 @@
 # Create a virtual desktop
 
-{% hint style="info" %}
-To create a new IDEA Virtual Desktop, you must have installed the Virtual Desktop module. You can install the module on an existing IDEA cluster.
-{% endhint %}
-
 ## Create your Windows or Linux desktop
 
-To access the Virtual Desktop section, click "**Virtual Desktop**" on the left sidebar:
+To access the Virtual Desktop section, click "**Virtual Desktops**" on the left sidebar:
 
 <figure><img src="../.gitbook/assets/Screen Shot 2022-10-21 at 9.54.11 PM.png" alt=""><figcaption></figcaption></figure>
 
-To launch your virtual desktop click "Launch new Virtual Desktop" button. You will be prompted with a new modal asking you a couple of questions:
+To launch your virtual desktop click "**Launch new Virtual Desktop"** button. You will be prompted with a new modal asking you a couple of questions:
 
-* A name for your desktop
-* The operating system you want to use from:
+* **Session Name**: A name for your desktop
+* **Project**: The project your session will get created. Refer to "Projects Management" section under [Cluster Manager](https://app.gitbook.com/o/ewXgnQpSEObr0Vh0WSOj/s/GtBrWw9T1qCJK2QCOTW2/ "mention") to learn more about projects.
+* **Operating System**: The operating system you want to use from:
   * **Linux**
     * Amazon Linux 2
     * CentOS 7
     * Red Hat Enterprise Linux 7
   * **Windows**:
     * Windows Server 2019
-* The software stack to provision. A software stack is an EC2 AMI with pre-installed and pre-configured applications defined by your cluster administrator. Follow this link (TOBEADDED) to learn how to create custom software stack for your team.
-* Size of the main EBS partition
-* Type of EC2 instance to provision. You will be able to change this value later on without having to re-create a new desktop if needed
-* Optional: Advanced option such as enforcing a subnet ID
+* **Software Stack**: A software stack is an EC2 AMI with pre-installed and pre-configured applications defined by your cluster administrator. Refer to [software-stacks-amis.md](../vdi-admins/software-stacks-amis.md "mention") to learn how to create custom software stack for your team.
+* **Hibernation**: Select whether or not you want to enable hibernation for your session. You must be verify if your EC2 instance supports hibernation first
+* **Virtual Desktop Size:** Instance type to provision. Select of EC2 instance types is based on the list of instances safe-listed by your cluster administrator and the project selected. You can change this value later without having to re-create a new desktop (see [modify-a-virtual-desktop.md](modify-a-virtual-desktop.md "mention"))
+* **Storage Size**: Size of the main EBS partition
+* **Advanced Options**: Advanced option such as enforcing a subnet ID or choose the DCV sessions type
 
-![Form to complete before creating your own Windows or Linux desktop](<../.gitbook/assets/Screen Shot 2022-06-06 at 3.47.13 PM.png>)
+<figure><img src="../.gitbook/assets/Screen Shot 2022-10-25 at 10.52.44 AM.png" alt=""><figcaption></figcaption></figure>
 
-Click<img src="../.gitbook/assets/Screen Shot 2022-06-06 at 6.43.02 PM.png" alt="" data-size="line">button to launch your virtual desktop creation. You will instantly see a new card with your desktop information. Your virtual desktop will be ready within 10-15 minutes. Startup time is based on the image selected, the operating system as well as the instance type. Windows tends to boot faster as some components such as the scheduler or EFS are not installed.
+Click "**Submit**" button to launch your virtual desktop creation. You will instantly see a new card with your desktop information. Your virtual desktop will be ready within 10-15 minutes. Startup time is based on the image selected, the operating system as well as the instance type.
 
-![](<../.gitbook/assets/Screen Shot 2022-06-06 at 3.55.34 PM.png>)
+<figure><img src="../.gitbook/assets/Screen Shot 2022-10-25 at 10.53.56 AM.png" alt=""><figcaption><p>Desktop being started</p></figcaption></figure>
 
 Wait a couple of minutes until your desktop is ready.
 
@@ -45,7 +43,7 @@ Once your virtual desktop is up and running, you can click the card and connect 
 
 <summary>Easiest: Access your desktop from within your web browser</summary>
 
-Click<img src="../.gitbook/assets/Screen Shot 2022-06-06 at 4.08.13 PM.png" alt="" data-size="line">button or click the thumbnail to access your Windows or Linux desktop directly via your browser.
+Click "**Connect**" button or click the thumbnail to access your Windows or Linux desktop directly via your browser.
 
 </details>
 
@@ -53,7 +51,7 @@ Click<img src="../.gitbook/assets/Screen Shot 2022-06-06 at 4.08.13 PM.png" alt=
 
 <summary>Best Performance: Use DCV Client </summary>
 
-Click <img src="../.gitbook/assets/Screen Shot 2022-06-06 at 4.07.45 PM.png" alt="" data-size="line"> button to download your `.dcv` file. To open this file, you will need to have the DCV Client installed on your system. Click the <img src="../.gitbook/assets/Screen Shot 2022-06-06 at 4.09.14 PM.png" alt="" data-size="line"> icon to access to the download link and installation instructions.
+Click "**DCV Session File**" button to download your `.dcv` file. To open this file, you will need to have the DCV Client installed on your system. Click the "**?**" icon to access to the download link and installation instructions.
 
 </details>
 
