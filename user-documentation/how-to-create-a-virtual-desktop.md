@@ -55,7 +55,7 @@ Click "**DCV Session File**" button to download your `.dcv` file. To open this f
 
 </details>
 
-![Example of Linux virtual desktop up and running](<../.gitbook/assets/Screen Shot 2022-06-06 at 4.03.27 PM.png>)
+<figure><img src="../.gitbook/assets/Screen Shot 2022-10-25 at 1.55.56 PM.png" alt=""><figcaption><p>Virtual Desktop ready to be used</p></figcaption></figure>
 
 ## How to change the schedule of your Windows or Linux desktop
 
