@@ -13,7 +13,8 @@
 
 ## VDI Admins
 
-* [Sessions management](vdi-admins/sessions-management.md)
+* [Dashboard](vdi-admins/dashboard.md)
+* [Sessions](vdi-admins/sessions.md)
 * [Software Stacks (AMIs)](vdi-admins/software-stacks-amis.md)
 * [Projects management](vdi-admins/projects-management.md)
 * [QUIC native support](vdi-admins/quic-native-support.md)

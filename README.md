@@ -14,6 +14,6 @@ Virtual Desktop Interface (VDI) module lets users easily create and manage their
 
 ## Admin Documentation
 
-* [sessions-management.md](vdi-admins/sessions-management.md "mention")
+* [sessions.md](vdi-admins/sessions.md "mention")
 * [software-stacks-amis.md](vdi-admins/software-stacks-amis.md "mention")
 * [permissions-management.md](vdi-admins/permissions-management.md "mention")
