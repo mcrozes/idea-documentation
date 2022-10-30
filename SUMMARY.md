@@ -17,10 +17,10 @@
 * [Sessions](vdi-admins/sessions.md)
 * [Software Stacks (AMIs)](vdi-admins/software-stacks-amis.md)
 * [Projects management](vdi-admins/projects-management.md)
-* [QUIC native support](vdi-admins/quic-native-support.md)
 * [Permissions management](vdi-admins/permissions-management.md)
 
 ## Technical
 
+* [QUIC native support](technical/quic-native-support.md)
 * [Backend Architecture](technical/backend-architecture.md)
 * [APIs](technical/apis.md)
