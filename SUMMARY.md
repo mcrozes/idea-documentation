@@ -11,13 +11,13 @@
 * [Share a virtual desktop](user-documentation/share-a-virtual-desktop.md)
 * [Virtual desktop scheduling](user-documentation/virtual-desktop-scheduling.md)
 
-## VDI Admins
+## Admin Documentation
 
-* [Dashboard](vdi-admins/dashboard.md)
-* [Sessions](vdi-admins/sessions.md)
-* [Software Stacks (AMIs)](vdi-admins/software-stacks-amis.md)
-* [Projects management](vdi-admins/projects-management.md)
-* [Permissions management](vdi-admins/permissions-management.md)
+* [Dashboard](admin-documentation/dashboard.md)
+* [Sessions](admin-documentation/sessions.md)
+* [Software Stacks (AMIs)](admin-documentation/software-stacks-amis.md)
+* [Projects management](admin-documentation/projects-management.md)
+* [Permissions management](admin-documentation/permissions-management.md)
 
 ## Technical
 
