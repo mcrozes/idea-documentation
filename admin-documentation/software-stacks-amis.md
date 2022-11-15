@@ -11,7 +11,3 @@ tbw
 ### Register a new Software Stack on IDEA
 
 <figure><img src="../.gitbook/assets/Screen Shot 2022-10-26 at 3.01.08 PM.png" alt=""><figcaption></figcaption></figure>
-
-### Launch a virtual desktop using the new Software Stack
-
-tbw
