@@ -21,6 +21,4 @@
 
 ## Technical
 
-* [QUIC native support](technical/quic-native-support.md)
-* [Backend Architecture](technical/backend-architecture.md)
 * [APIs](technical/apis.md)
