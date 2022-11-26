@@ -16,7 +16,6 @@
 * [Dashboard](admin-documentation/dashboard.md)
 * [Sessions](admin-documentation/sessions.md)
 * [Virtual Desktop Images (Software Stacks)](admin-documentation/virtual-desktop-images-software-stacks.md)
-* [Projects management](admin-documentation/projects-management.md)
 * [Permissions management](admin-documentation/permissions-management.md)
 
 ## Technical
