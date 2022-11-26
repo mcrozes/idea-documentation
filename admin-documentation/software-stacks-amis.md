@@ -1,6 +1,6 @@
 # Software Stacks (AMIs)
 
-A Software Stack is an pre-configured AMI. As administrator, you can register Linux or Windows AMI. A Software Stack is particularly useful if you are planning to pre-install applications on behalf of your users
+A Software Stack is an Amazon Machine Image (AMI - pronouned [Ay-Em-i](https://twitter.com/Werner/status/1182530158026055681)) with your applications pre-installed and configured for your users. Users can then provision their virtual desktops easily with all the software pre-loaded and ready to be used.
 
 <figure><img src="../.gitbook/assets/Screen Shot 2022-10-26 at 2.59.37 PM.png" alt=""><figcaption><p>List all AMI available to the users</p></figcaption></figure>
 
@@ -13,10 +13,11 @@ A Software Stack is an pre-configured AMI. As administrator, you can register Li
 
 A Software Stack, also known as Amazon Machine Image (AMI) is a complete snapshot of your EC2 host.&#x20;
 
-**Make sure you do not have any confidential data hosted on it before creating the image**
+**Make sure you do not have any confidential data hosted on your Virtual Desktop before creating the image.**
 
-Here is a non exhaustive list of item you should check before creating the snapshot:
+Here is a non exhaustive list of items you should check before creating the snapshot:
 
+* [x] It's highly recommended to start creating a new Software Stack from a brand new Virtual Desktop
 * [x] Verify you have not stored any password on your internet browser. It's recommended to clear the cache of all the browsers you have used.
 * [x] Verify there is no confidential information on your current $HOME directory.
 * [x] Verify your Document/Download/Desktops folders are empty or don't contains any confidential information.
