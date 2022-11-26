@@ -1,4 +1,6 @@
-# Software Stacks (AMIs)
+# Virtual Desktop Images (Software Stacks)
+
+
 
 A Software Stack is an Amazon Machine Image (AMI - pronouned [Ay-Em-i](https://twitter.com/Werner/status/1182530158026055681)) with your applications pre-installed and configured for your users. Users can then provision their virtual desktops easily with all the software pre-loaded and ready to be used.
 
@@ -17,7 +19,7 @@ A Software Stack, also known as Amazon Machine Image (AMI) is a complete snapsho
 
 Here is a non exhaustive list of items you should check before creating the snapshot:
 
-* [x] It's highly recommended to start creating a new Software Stack from a brand new Virtual Desktop
+* [x] It's highly recommended to start creating a new Software Stack from a brand new Virtual Desktop.
 * [x] Verify you have not stored any password on your internet browser. It's recommended to clear the cache of all the browsers you have used.
 * [x] Verify there is no confidential information on your current $HOME directory.
 * [x] Verify your Document/Download/Desktops folders are empty or don't contains any confidential information.
@@ -48,7 +50,9 @@ Choose a name and a description, make sure to check "**No Reboot: Enable**" then
 
 <figure><img src="../.gitbook/assets/Screen Shot 2022-11-26 at 7.50.51 PM.png" alt=""><figcaption><p>Make sure "No Reboot" is enabled.</p></figcaption></figure>
 
-Navigate to the AMI tab and verify if your image status is "available"
+Navigate to the AMI tab and verify if your image status is "available" and copy your AMI ID.
+
+<figure><img src="../.gitbook/assets/Screen Shot 2022-11-26 at 9.49.17 PM.png" alt=""><figcaption><p>Wait until the image is fully available</p></figcaption></figure>
 
 {% hint style="warning" %}
 **My AMI is taking forever:**
@@ -62,10 +66,20 @@ To check the progress of your image, navigate to "Snapshots" section and refer t
 ![](../.gitbook/assets/dcv-images-8.png)
 {% endhint %}
 
-Once your AMI is in available state, log in to IDEA and refer to  [#register-a-new-software-stack-on-idea](software-stacks-amis.md#register-a-new-software-stack-on-idea "mention")
-
-
+Once your AMI is in available state, log in to IDEA and refer to  [#register-a-new-software-stack-on-idea](virtual-desktop-images-software-stacks.md#register-a-new-software-stack-on-idea "mention")
 
 ### Register a new Software Stack on IDEA
 
-<figure><img src="../.gitbook/assets/Screen Shot 2022-10-26 at 3.01.08 PM.png" alt=""><figcaption></figcaption></figure>
+To register a new Software Stack, click "**Create Software Stack**" under the "**Software Stacks (AMIs)**" section
+
+You will be asked to enter a name, description and other parameters specific to your image.
+
+You will also need to specify which IDEA Projects are authorized to use this image. [Refer to Project Management to learn more about IDEA Projects and ACLs](https://docs.ide-on-aws.com/cluster-manager/menu/projects-management).
+
+{% hint style="warning" %}
+Storage Size (GB) must match the size of the EBS volumes attached at the time of the image creation
+{% endhint %}
+
+<figure><img src="../.gitbook/assets/Screen Shot 2022-11-26 at 9.54.30 PM.png" alt=""><figcaption><p>Fill out the form to create the image</p></figcaption></figure>
+
+Once created, the Software Stack will be visible to all users who belong to the associated project(s).

@@ -19,7 +19,7 @@ To launch your virtual desktop click "**Launch new Virtual Desktop"** button. Yo
     * Red Hat Enterprise Linux 7
   * **Windows**:
     * Windows Server 2019
-* **Software Stack**: A software stack is an EC2 AMI with pre-installed and pre-configured applications defined by your cluster administrator. Refer to [software-stacks-amis.md](../admin-documentation/software-stacks-amis.md "mention") to learn how to create custom software stack for your team.
+* **Software Stack**: A software stack is an EC2 AMI with pre-installed and pre-configured applications defined by your cluster administrator. Refer to [virtual-desktop-images-software-stacks.md](../admin-documentation/virtual-desktop-images-software-stacks.md "mention") to learn how to create custom software stack for your team.
 * **Hibernation**: Select whether or not you want to enable hibernation for your session. You must be verify if your EC2 instance supports hibernation first
 * **Virtual Desktop Size:** Instance type to provision. Select of EC2 instance types is based on the list of instances safe-listed by your cluster administrator and the project selected. You can change this value later without having to re-create a new desktop (see [modify-a-virtual-desktop.md](modify-a-virtual-desktop.md "mention"))
 * **Storage Size**: Size of the main EBS partition
