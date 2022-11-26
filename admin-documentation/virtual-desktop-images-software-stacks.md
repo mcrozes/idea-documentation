@@ -21,6 +21,7 @@ Here is a non exhaustive list of items you should check before creating the snap
 * [x] Verify you have not stored any password on your internet browser. It's recommended to clear the cache of all the browsers you have used.
 * [x] Verify there is no confidential information on your current $HOME directory.
 * [x] Verify your Document/Download/Desktops folders are empty or don't contains any confidential information.
+* [x] Verify the list of local user(s) that belong to the "Administrators" group. User(s) who have Administrator permissions on the virtual desktop will inherently have the same permissions on all future desktops launched by the software stack.&#x20;
 * [x] As an extra step, you can completely delete your $HOME directory
 {% endhint %}
 
