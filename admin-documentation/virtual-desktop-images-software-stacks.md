@@ -1,12 +1,10 @@
 # Virtual Desktop Images (Software Stacks)
 
-
-
-A Software Stack is an Amazon Machine Image (AMI - pronouned [Ay-Em-i](https://twitter.com/Werner/status/1182530158026055681)) with your applications pre-installed and configured for your users. Users can then provision their virtual desktops easily with all the software pre-loaded and ready to be used.
+A Software Stack is an Amazon Machine Image (AMI - pronounced [Ay-Em-i](https://twitter.com/Werner/status/1182530158026055681)) with your applications pre-installed and configured for your users. Users can then provision their virtual desktops easily with all the software pre-loaded and ready to be used.
 
 <figure><img src="../.gitbook/assets/Screen Shot 2022-10-26 at 2.59.37 PM.png" alt=""><figcaption><p>List all AMI available to the users</p></figcaption></figure>
 
-### Prepare the EC2 instance to be used as Software Stack
+### Prepare a virtual desktop  to be used as Software Stack
 
 #### Windows
 
@@ -30,7 +28,7 @@ First, launch your Virtual Desktop and install some applications. Once you are d
 
 <figure><img src="../.gitbook/assets/Screen Shot 2022-11-26 at 7.41.25 PM.png" alt=""><figcaption><p>Click Windows button and launch "Windows Powershell"</p></figcaption></figure>
 
-On the Powershell terminal, execute the following command to re-enable the execution of EC2 UserData script.
+On the PowerShell terminal, execute the following command to re-enable the execution of EC2 UserData script.
 
 ```powershell
 C:\ProgramData\Amazon\EC2-Windows\Launch\Scripts\InitializeInstance.ps1 -Schedule
@@ -38,11 +36,11 @@ C:\ProgramData\Amazon\EC2-Windows\Launch\Scripts\InitializeInstance.ps1 -Schedul
 
 <figure><img src="../.gitbook/assets/Screen Shot 2022-11-26 at 7.44.39 PM.png" alt=""><figcaption><p>Re-enable EC2 UserData Script</p></figcaption></figure>
 
-At this point, go back to the VDI web-interface, select your Virtual Desktops and click "**Action**" > "**Show Info**" to display detailed details about your instance, then search of "**Instance ID**"
+At this point, go back to the IDEA Virtual Desktops web-interface, select your Virtual Desktop and click "**Action**" > "**Show Info**" to display detailed details about your desktop, then search for "**Instance ID**".
 
 <figure><img src="../.gitbook/assets/Screen Shot 2022-11-26 at 7.46.53 PM.png" alt=""><figcaption><p>Locate the instance ID of the dektop you are about to snapshot</p></figcaption></figure>
 
-On your EC2 console and search for your instance. Once done, select the instance and click "**Actions**" > "**Image**" > "**Create Image**"
+Open your EC2 console and search for your instance then click "**Actions**" > "**Image and templates**" > "**Create Image**"
 
 <figure><img src="../.gitbook/assets/Screen Shot 2022-11-26 at 7.48.13 PM.png" alt=""><figcaption><p>Create an image of your EC2 Desktop</p></figcaption></figure>
 
