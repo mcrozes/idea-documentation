@@ -11,14 +11,14 @@ A Software Stack is an Amazon Machine Image (AMI - pronounced [Ay-Em-i](https://
 {% hint style="danger" %}
 **IMPORTANT**
 
-A Software Stack, also known as Amazon Machine Image (AMI) is a complete snapshot of your EC2 host.&#x20;
+A Software Stack, also known as Amazon Machine Image (AMI), is a complete snapshot of your EC2 host.&#x20;
 
 **Make sure you do not have any confidential data hosted on your Virtual Desktop before creating the image.**
 
-Here is a non exhaustive list of items you should check before creating the snapshot:
+Here is a non exhaustive list of recommendations you must review prior to creating the image:
 
 * [x] It's highly recommended to start creating a new Software Stack from a brand new Virtual Desktop.
-* [x] Verify you have not stored any password on your internet browser. It's recommended to clear the cache of all the browsers you have used.
+* [x] Verify you have not stored any passwords on your internet browser. It's recommended to clear the cache of all browsers.
 * [x] Verify there is no confidential information on your current $HOME directory.
 * [x] Verify your Document/Download/Desktops folders are empty or don't contains any confidential information.
 * [x] Verify the list of local user(s) that belong to the "Administrators" group. User(s) who have Administrator permissions on the virtual desktop will inherently have the same permissions on all future desktops launched by the software stack.&#x20;
@@ -81,4 +81,6 @@ Storage Size (GB) must match the size of the EBS volumes attached at the time of
 
 <figure><img src="../.gitbook/assets/Screen Shot 2022-11-26 at 9.54.30 PM.png" alt=""><figcaption><p>Fill out the form to create the image</p></figcaption></figure>
 
-Once created, the Software Stack will be visible to all users who belong to the associated project(s).
+### Use your new Virtual Desktop Software Stack
+
+Once created, the Software Stack will be visible to all users who belong to the associated project(s). Refer to [create-a-virtual-desktop-linux-windows.md](../user-documentation/create-a-virtual-desktop-linux-windows.md "mention") to learn how to launch your desktop with the new image
