@@ -1,39 +1,28 @@
----
-layout: editorial
----
-
 # What is IDEA?
 
-Integrated Design Engineering on AWS (**IDEA**) is a solution that helps customers more easily deploy and operate a multiuser environment for computationally intensive workflows. The solution features a large selection of compute resources; fast network backbone; unlimited storage; and budget and cost management directly integrated within AWS. The solution also deploys a user interface (UI) and automation tools that allows you to create your own queues, scheduler resources, Amazon Machine Images (AMIs), software, and libraries. This solution is designed to provide a production ready reference implementation to be a starting point for deploying an AWS environment to run scale-out workloads, allowing you to focus on running simulations designed to solve complex computational problems.\\
+**I**ntegrated **D**igital **E**ngineering on **A**WS (**IDEA**) empowers teams of engineers, scientists and researchers with a cloud environment to host engineering tools required for end-to-end product development workloads (Computer Aided Design – CAD, Computer Aided Engineering - CAE, Model Based Systems Engineering - MBSE, Electronic Design Automation – EDA). Using this solution, research and development (R\&D) leaders enable engineers and designers to break-through development silos and accelerate the product development process.
+
+With Integrated Digital Engineering on AWS, in a matter of hours engineering application teams can now deploy scalable engineering collaboration chambers customized to meet organizations security requirements for joint development with trusted partners and suppliers. Engineers interact with a catalog of familiar tools seamlessly integrated into an intuitive web portal. Applications tuned engineering workstations and compute clusters are automatically created and then scaled down once work is completed eliminating wasted time and resources.&#x20;
+
+The solution features a large selection of compute resources; fast network backbone; unlimited storage;  budget and cost management directly integrated within AWS. The solution also deploys a user interface (UI) and automation tools that allows you to create your own queues, scheduler resources, Amazon Machine Images (AMIs), software and libraries.&#x20;
+
+This solution is designed to provide a production ready reference implementation to be a starting point for deploying an AWS environment to run scale-out workloads, allowing you to focus on running simulations designed to solve complex computational problems.
 
 ## How to get started
 
-Refer to this guide if you do not have any prior experience with IDEA. We will show you how to install your first cluster and interact with it:
+Refer to this guide if you do not have any prior experience with IDEA. We will show you how to install your first cluster:
 
-{% content-ref url="broken-reference" %}
-[Broken link](broken-reference)
+{% content-ref url="first-time-users/install-idea/" %}
+[install-idea](first-time-users/install-idea/)
 {% endcontent-ref %}
 
-IDEA is a framework on which you can deploy multiple independent modules based on your own requirements. Select the module below to learn more.
+IDEA is deployed? Let's see how to interact with it:
 
-{% hint style="info" %}
-* You can add module(s) on an existing IDEA clusters
-* Web Interface & Directory Services are mandatory and will be deployed on any new IDEA environment
-{% endhint %}
-
-{% content-ref url="https://app.gitbook.com/o/ewXgnQpSEObr0Vh0WSOj/s/QthiamUzKn8KJLl0hYBf/" %}
-[Virtual Desktop Interface (VDI)](https://app.gitbook.com/o/ewXgnQpSEObr0Vh0WSOj/s/QthiamUzKn8KJLl0hYBf/)
+{% content-ref url="first-time-users/lets-get-started.md" %}
+[lets-get-started.md](first-time-users/lets-get-started.md)
 {% endcontent-ref %}
 
-{% content-ref url="https://app.gitbook.com/o/ewXgnQpSEObr0Vh0WSOj/s/LGamNPuOYtjAP3GFfRJO/" %}
-[Scale-Out Workloads](https://app.gitbook.com/o/ewXgnQpSEObr0Vh0WSOj/s/LGamNPuOYtjAP3GFfRJO/)
-{% endcontent-ref %}
-
-{% content-ref url="broken-reference" %}
-[Broken link](broken-reference)
-{% endcontent-ref %}
-
-Refer to the Support page in case you need any sort of assistance
+IDEA is a framework on which you can deploy multiple independent modules based on your own requirements. Select the module (Scale-Out Workloads, Engineering Virtual Desktops ..) below to learn more.
 
 {% content-ref url="broken-reference" %}
 [Broken link](broken-reference)
@@ -41,24 +30,28 @@ Refer to the Support page in case you need any sort of assistance
 
 ## Key Features <a href="#easy-installation" id="easy-installation"></a>
 
-### Easy installation[¶](https://awslabs.github.io/scale-out-computing-on-aws/#easy-installation) <a href="#easy-installation" id="easy-installation"></a>
+### Easy installation <a href="#easy-installation" id="easy-installation"></a>
 
-[Installation of your Scale-Out Computing on AWS cluster](https://awslabs.github.io/scale-out-computing-on-aws/tutorials/install-soca-cluster/) is fully automated and managed by CloudFormation
+Installation of IDEA is fully automated via a visual installation wizard ([install-idea](first-time-users/install-idea/ "mention"))
 
 {% hint style="info" %}
 Did you know?
 
-* You can have multiple Scale-Out Computing on AWS clusters on the same AWS account
-* Scale-Out Computing on AWS comes with a list of unique tags, making resource tracking easy for AWS Administrators
+* You can have multiple IDEA clusters on the same AWS account
+* IDEA comes with a list of unique tags, making resource tracking easy for AWS Administrators
 {% endhint %}
 
-### Access your cluster in 1 click[¶](https://awslabs.github.io/scale-out-computing-on-aws/#access-your-cluster-in-1-click) <a href="#access-your-cluster-in-1-click" id="access-your-cluster-in-1-click"></a>
+### Access your cluster in 1 click <a href="#access-your-cluster-in-1-click" id="access-your-cluster-in-1-click"></a>
 
-You can [access your Scale-Out Computing on AWS cluster](https://awslabs.github.io/scale-out-computing-on-aws/tutorials/access-soca-cluster/) either using DCV (Desktop Cloud Visualization)[1](https://awslabs.github.io/scale-out-computing-on-aws/#fn:1) or through SSH.
+You can access your IDEA cluster using multiple channels such as APIs, Virtual Desktops, Web Interface or SSH ([access-your-idea-cluster](first-time-users/access-your-idea-cluster/ "mention"))
 
-### Simple Job Submission[¶](https://awslabs.github.io/scale-out-computing-on-aws/#simple-job-submission) <a href="#simple-job-submission" id="simple-job-submission"></a>
+### Linux & Windows Virtual Desktops <a href="#simple-job-submission" id="simple-job-submission"></a>
 
-Scale-Out Computing on AWS [supports a list of parameters designed to simplify your job submission on AWS](https://awslabs.github.io/scale-out-computing-on-aws/tutorials/integration-ec2-job-parameters/). Advanced users can either manually choose compute/storage/network configuration for their job or simply ignore these parameters and let Scale-Out Computing on AWS picks the most optimal hardware (defined by the HPC administrator)
+Control your fleet of virtual desktops easily via the [Virtual Desktop Interface (VDI)](https://app.gitbook.com/o/ewXgnQpSEObr0Vh0WSOj/s/QthiamUzKn8KJLl0hYBf/ "mention")modules. Control what compute/AMIs can be used. Update your fleet in real-time and enable session-sharing to simplify collaboration cross teams.
+
+### Simple Job Submission <a href="#simple-job-submission" id="simple-job-submission"></a>
+
+IDEA [supports a list of parameters designed to simplify your job submission on AWS](https://docs.ide-on-aws.com/hpc-simulations/user-documentation/supported-ec2-parameters). Advanced users can either manually choose compute/storage/network configuration for their job or simply ignore these parameters and let IDEA picks the most optimal hardware (defined by the cluster administrator)
 
 ```bash
 # Advanced Configuration
@@ -73,23 +66,20 @@ user@host$ qsub -l instance_type=c5n.18xlarge \
 user@host$ qsub myscript.sh
 ```
 
-{% hint style="info" %}
-* [Check our Web-Based utility to generate you submission command](https://awslabs.github.io/scale-out-computing-on-aws/tutorials/job-configuration-generator/)
-* [Refer to this page for tutorial and examples](https://awslabs.github.io/scale-out-computing-on-aws/tutorials/launch-your-first-job/)
-* [Refer to this page to list all supported parameters](https://awslabs.github.io/scale-out-computing-on-aws/tutorials/integration-ec2-job-parameters/)
-* Jobs can also be submitted [via HTTP API](https://awslabs.github.io/scale-out-computing-on-aws/web-interface/control-hpc-job-with-http-web-rest-api/) or [via web interface](https://awslabs.github.io/scale-out-computing-on-aws/web-interface/submit-hpc-jobs-web-based-interface/)
-{% endhint %}
+### Web-Based Jobs Workflow <a href="#os-agnostic-and-support-for-custom-ami" id="os-agnostic-and-support-for-custom-ami"></a>
 
-### OS agnostic and support for custom AMI[¶](https://awslabs.github.io/scale-out-computing-on-aws/#os-agnostic-and-support-for-custom-ami) <a href="#os-agnostic-and-support-for-custom-ami" id="os-agnostic-and-support-for-custom-ami"></a>
+Submit your Scale-Out Workloads simulation easily via a simple [NoCode web-based wizard interface.](https://docs.ide-on-aws.com/hpc-simulations/admin-documentation/create-web-based-job-submission-worfklows)
 
-Customers can integrate their Centos7/Rhel7/AmazonLinux2 AMI automatically by simply using `-l instance_ami=<ami_id>` at job submission. There is no limitation in term of AMI numbers (you can have 10 jobs running simultaneously using 10 different AMIs). SOCA supports heterogeneous environment, so you can have concurrent jobs running different operating system on the same cluster.
+### OS agnostic and support for custom AMI <a href="#os-agnostic-and-support-for-custom-ami" id="os-agnostic-and-support-for-custom-ami"></a>
+
+Customers can integrate their Centos7/Rhel7/AmazonLinux2 AMI automatically by simply using `-l instance_ami=<ami_id>` at job submission. There is no limitation in term of AMI numbers (you can have 10 jobs running simultaneously using 10 different AMIs). IDEA supports heterogeneous environment, so you can have concurrent jobs running different operating system on the same cluster.
 
 {% hint style="warning" %}
 **AMI using OS different than the scheduler**
 
 In case your AMI is different than your scheduler host, you can specify the OS manually to ensure packages will be installed based on the node distribution.
 
-In this example, we assume your Scale-Out Computing on AWS deployment was done using AmazonLinux2, but you want to submit a job on your personal RHEL7 AMI
+In this example, we assume your IDEA deployment was done using AmazonLinux2, but you want to submit a job on your personal RHEL7 AMI
 
 ```bash
 user@host$ qsub -l instance_ami=<ami_id> \
@@ -97,74 +87,52 @@ user@host$ qsub -l instance_ami=<ami_id> \
 ```
 {% endhint %}
 
-### Web User Interface[¶](https://awslabs.github.io/scale-out-computing-on-aws/#web-user-interface) <a href="#web-user-interface" id="web-user-interface"></a>
+### Web User Interface <a href="#web-user-interface" id="web-user-interface"></a>
 
-Scale-Out Computing on AWS includes a simple web ui designed to simplify user interactions such as:
+IDEA includes a simple web interface designed to simplify user interactions ([web-interface.md](first-time-users/access-your-idea-cluster/web-interface.md "mention"))
 
-* [Start/Stop DCV sessions in 1 click](https://awslabs.github.io/scale-out-computing-on-aws/tutorials/access-soca-cluster/#graphical-access-using-dcv)
-* [Download private key in both PEM or PPK format](https://awslabs.github.io/scale-out-computing-on-aws/tutorials/access-soca-cluster/#ssh-access)
-* [Check the queue and job status in real-time](https://awslabs.github.io/scale-out-computing-on-aws/web-interface/manage-ldap-users/)
-* [Add/Remove LDAP users](https://awslabs.github.io/scale-out-computing-on-aws/web-interface/manage-ldap-users/)
-* [Access the analytic dashboard](https://awslabs.github.io/scale-out-computing-on-aws/web-interface/my-activity/)
-* [Access your filesystem](https://awslabs.github.io/scale-out-computing-on-aws/web-interface/my-files/)
-* [Understand why your jobs are stuck in the queue](https://awslabs.github.io/scale-out-computing-on-aws/web-interface/my-job-queue/#understand-why-your-job-cannot-start)
-* [Create Application profiles and let your users submit job directly via the web interface](https://awslabs.github.io/scale-out-computing-on-aws/web-interface/submit-hpc-jobs-web-based-interface/)
+### HTTP Rest API <a href="#http-rest-api" id="http-rest-api"></a>
 
-### HTTP Rest API[¶](https://awslabs.github.io/scale-out-computing-on-aws/#http-rest-api) <a href="#http-rest-api" id="http-rest-api"></a>
+IDEA is 100% API based. IDEA provide a Swagger template for all methods (.yml url is available via the `Settings` section of each module)
 
-Users can submit/retrieve/delete jobs [remotely via an HTTP REST API](https://awslabs.github.io/scale-out-computing-on-aws/web-interface/control-hpc-job-with-http-web-rest-api/)
+### Budgets and Cost Management <a href="#budgets-and-cost-management" id="budgets-and-cost-management"></a>
 
-### Budgets and Cost Management[¶](https://awslabs.github.io/scale-out-computing-on-aws/#budgets-and-cost-management) <a href="#budgets-and-cost-management" id="budgets-and-cost-management"></a>
+You can review your HPC costs ([review-your-aws-spend.md](best-practices/budget/review-your-aws-spend.md "mention"))  filtered by user/team/project/queue very easily using AWS Cost Explorer.
 
-You can [review your HPC costs](https://awslabs.github.io/scale-out-computing-on-aws/budget/review-hpc-costs/) filtered by user/team/project/queue very easily using AWS Cost Explorer.
+IDEA also supports AWS Budget and let you create budgets assigned to user/team/project or queue. To prevent over-spend, IDEA includes hooks to restrict job submission when customer-defined budget has expired ([set-up-budget-per-project.md](best-practices/budget/set-up-budget-per-project.md "mention"))
 
-Scale-Out Computing on AWS also supports AWS Budget and [let you create budgets](https://awslabs.github.io/scale-out-computing-on-aws/budget/set-up-budget-project/) assigned to user/team/project or queue. To prevent over-spend, Scale-Out Computing on AWS includes hooks to restrict job submission when customer-defined budget has expired.
+Lastly, Scale-Out Computing on AWS let you create queue ACLs or instance restriction at a queue level. Refer to  [budget](best-practices/budget/ "mention") for all best practices in order to control your HPC cost on AWS and prevent overspend.
 
-Lastly, Scale-Out Computing on AWS let you create queue ACLs or instance restriction at a queue level. [Refer to this link for all best practices in order to control your HPC cost on AWS and prevent overspend](https://awslabs.github.io/scale-out-computing-on-aws/budget/prevent-overspend-hpc-cost-on-aws-soca/).
+### Detailed Cluster Analytics <a href="#detailed-cluster-analytics" id="detailed-cluster-analytics"></a>
 
-### Detailed Cluster Analytics[¶](https://awslabs.github.io/scale-out-computing-on-aws/#detailed-cluster-analytics) <a href="#detailed-cluster-analytics" id="detailed-cluster-analytics"></a>
+IDEA includes OpenSearch (formerly ElasticSearch) and automatically ingest job and hosts data in real-time for accurate visualization of your cluster activity.
 
-Scale-Out Computing on AWS [includes OpenSearch (formerly Elasticsearch) and automatically ingest job and hosts data](https://awslabs.github.io/scale-out-computing-on-aws/analytics/monitor-cluster-activity/) in real-time for accurate visualization of your cluster activity.
+Don't know where to start? Check out [create-your-own-analytics-visualizations.md](best-practices/analytics/opensearch/create-your-own-analytics-visualizations.md "mention") for some examples
 
-Don't know where to start?
+### 100% Customizable <a href="#100-customizable" id="100-customizable"></a>
 
-Scale-Out Computing on AWS [includes dashboard examples](https://awslabs.github.io/scale-out-computing-on-aws/analytics/build-kibana-dashboards/) if you are not familiar with OpenSearch (formerly Elasticsearch) or Kibana.
+IDEA is built entirely on top of AWS and can be customized by users as needed. The entire  codebase is open-source and available on Github ([https://github.com/awslabs/integrated-digital-engineering-on-aws)](https://github.com/awslabs/integrated-digital-engineering-on-aws)
 
-### 100% Customizable[¶](https://awslabs.github.io/scale-out-computing-on-aws/#100-customizable) <a href="#100-customizable" id="100-customizable"></a>
-
-Scale-Out Computing on AWS is built entirely on top of AWS and can be customized by users as needed. Most of the logic is based of CloudFormation templates, shell scripts and python code. More importantly, the entire Scale-Out Computing on AWS codebase is open-source and [available on Github](https://github.com/awslabs/scale-out-computing-on-aws).
-
-### Persistent and Unlimited Storage[¶](https://awslabs.github.io/scale-out-computing-on-aws/#persistent-and-unlimited-storage) <a href="#persistent-and-unlimited-storage" id="persistent-and-unlimited-storage"></a>
+### Persistent and Unlimited Storage <a href="#persistent-and-unlimited-storage" id="persistent-and-unlimited-storage"></a>
 
 Scale-Out Computing on AWS includes two unlimited EFS storage (/apps and /data). Customers also have the ability to deploy high-speed SSD EBS disks or FSx for Lustre as scratch location on their compute nodes. [Refer to this page to learn more about the various storage options](https://awslabs.github.io/scale-out-computing-on-aws/storage/backend-storage-options/) offered by Scale-Out Computing on AWS
 
-### Centralized user-management[¶](https://awslabs.github.io/scale-out-computing-on-aws/#centralized-user-management) <a href="#centralized-user-management" id="centralized-user-management"></a>
+### Centralized user-management <a href="#centralized-user-management" id="centralized-user-management"></a>
 
-Customers [can create unlimited LDAP users and groups](https://awslabs.github.io/scale-out-computing-on-aws/web-interface/manage-ldap-users/). By default Scale-Out Computing on AWS includes a default LDAP account provisioned during installation as well as a "Sudoers" LDAP group which manage SUDO permission on the cluster.
+Customers can create unlimited LDAP users and groups via OpenLDAP or Microsoft Active Directory.
 
-### Automatic backup[¶](https://awslabs.github.io/scale-out-computing-on-aws/#automatic-backup) <a href="#automatic-backup" id="automatic-backup"></a>
+### Automatic backup <a href="#automatic-backup" id="automatic-backup"></a>
 
-Scale-Out Computing on AWS [automatically backup your data](https://awslabs.github.io/scale-out-computing-on-aws/security/backup-restore-your-cluster/) with no additional effort required on your side.
+IDEA  automatically backup your data ( [backup-idea-environment.md](best-practices/security/backup-idea-environment.md "mention")) with no additional effort required on your side.
 
-### Support for network licenses[¶](https://awslabs.github.io/scale-out-computing-on-aws/#support-for-network-licenses) <a href="#support-for-network-licenses" id="support-for-network-licenses"></a>
+### Support for network licenses <a href="#support-for-network-licenses" id="support-for-network-licenses"></a>
 
-Scale-Out Computing on AWS [includes a FlexLM-enabled script which calculate the number of licenses](https://awslabs.github.io/scale-out-computing-on-aws/tutorials/job-licenses-flexlm) for a given features and only start the job/provision the capacity when enough licenses are available.
+IDEA includes a FlexLM-enabled script which calculate the number of licenses for a given features and only start the job/provision the capacity when enough licenses are available.
 
-### Automatic Errors Handling[¶](https://awslabs.github.io/scale-out-computing-on-aws/#automatic-errors-handling) <a href="#automatic-errors-handling" id="automatic-errors-handling"></a>
+### Automatic Errors Handling <a href="#automatic-errors-handling" id="automatic-errors-handling"></a>
 
-Scale-Out Computing on AWS performs various dry run checks before provisioning the capacity. However, it may happen than AWS can't fullfill all requests (eg: need 5 instances but only 3 can be provisioned due to capacity shortage within a placement group). In this case, Scale-Out Computing on AWS will try to provision the capacity for 30 minutes. After 30 minutes, and if the capacity is still not available, Scale-Out Computing on AWS will automatically reset the request and try to provision capacity in a different availability zone. [To simplify troubleshooting, all these errors are reported on the web interface](https://awslabs.github.io/scale-out-computing-on-aws/web-interface/my-job-queue/#understand-why-your-job-cannot-start)
+IDEA performs various dry run checks before provisioning the capacity.&#x20;
 
-### Custom fair-share[¶](https://awslabs.github.io/scale-out-computing-on-aws/#custom-fair-share) <a href="#custom-fair-share" id="custom-fair-share"></a>
-
-Each user is given a score which vary based on:
-
-* Number of job in the queue
-* Time each job is queued
-* Priority of each job
-* Type of instance
-
-Job that belong to the user with the highest score will start next. Fair Share is is configured at the queue level (so you can have one queue using FIFO and another one Fair Share)
-
-### And more ...[¶](https://awslabs.github.io/scale-out-computing-on-aws/#and-more) <a href="#and-more" id="and-more"></a>
+### And more ... <a href="#and-more" id="and-more"></a>
 
 Refer to the various sections (tutorial/security/analytics ...) to learn more about this solution
