@@ -31,7 +31,9 @@ Installation of IDEA in Windows is managed by Powershell. Download and execute t
 ./idea-admin.sh utility offers many features. Refer to [idea-cli-utility.md](../../developer-portal/idea-cli-utility.md "mention") for more details.
 {% endhint %}
 
-Follow the installation wizard to install IDEA. During the installation, you will be prompted for various AWS parameters. `quick-setup` proceed to a brand new deployment, if you are looking to re-use existing AWS resources running on your AWS environment (VPC, subnets ..), refer to [Broken link](broken-reference "mention").
+Follow the installation wizard to install IDEA. During the installation, you will be prompted for various AWS parameters.
+
+&#x20;`quick-setup` proceed to a brand new deployment, if you are looking to re-use existing AWS resources running on your AWS environment (VPC, subnets ..), refer to [Broken link](broken-reference "mention").
 
 {% hint style="warning" %}
 Run `export IDEA_ADMIN_AWS_CREDENTIAL_PROVIDER=Ec2InstanceMetadata` prior to `quick-setup` if you are planning to authenticate to AWS using IAM role and not IAM user.
@@ -69,7 +71,7 @@ IDEA installer will guide you through the entire process during Step 3
 
 ## Change default installation parameters
 
-IDEA is 100% customizable and because of that, we cannot provide all the options via a single wizard. Follow these steps if you want to change the default parameters for any modules.
+IDEA is 100% customizable and because of that, we cannot provide all the options via a single wizard. Follow these steps if you want to change the default parameters for any module.
 
 1 - Proceed to the regular Installation via `idea-admin.sh quick-setup`
 
@@ -93,7 +95,7 @@ cluster-manager		identity-provider	vdc
 
 In this example, we will show you how to update the default parameter named "vdc.dcv\_session.allowed\_instance\_family\_types" (this parameter control what type of EC2 instance can be provisioned as virtual desktops by the end users).
 
-The screen below (generated during `idea-admin.sh quick-setup` ) reports virtual desktops can only use t3 or g4dn instance type.
+The screen below (generated during `idea-admin.sh quick-setup` ) reports virtual desktops can only use t3 or g4dn instance types.
 
 <figure><img src="../../.gitbook/assets/Screen Shot 2022-11-15 at 1.49.09 PM.png" alt=""><figcaption><p>Default parameters showing only 2 instance types being allowed for virtual desktops</p></figcaption></figure>
 
