@@ -4,18 +4,17 @@ layout: editorial
 
 # What is IDEA?
 
-Integrated Design Engineering on AWS (**IDEA**) is a solution that helps customers more easily deploy and operate a multiuser environment for computationally intensive workflows. The solution features a large selection of compute resources; fast network backbone; unlimited storage; and budget and cost management directly integrated within AWS. The solution also deploys a user interface (UI) and automation tools that allows you to create your own queues, scheduler resources, Amazon Machine Images (AMIs), software, and libraries. This solution is designed to provide a production ready reference implementation to be a starting point for deploying an AWS environment to run scale-out workloads, allowing you to focus on running simulations designed to solve complex computational problems.\
-
+Integrated Design Engineering on AWS (**IDEA**) is a solution that helps customers more easily deploy and operate a multiuser environment for computationally intensive workflows. The solution features a large selection of compute resources; fast network backbone; unlimited storage; and budget and cost management directly integrated within AWS. The solution also deploys a user interface (UI) and automation tools that allows you to create your own queues, scheduler resources, Amazon Machine Images (AMIs), software, and libraries. This solution is designed to provide a production ready reference implementation to be a starting point for deploying an AWS environment to run scale-out workloads, allowing you to focus on running simulations designed to solve complex computational problems.\\
 
 ## How to get started
 
 Refer to this guide if you do not have any prior experience with IDEA. We will show you how to install your first cluster and interact with it:
 
-{% content-ref url="https://app.gitbook.com/o/ewXgnQpSEObr0Vh0WSOj/s/M6r7H9BSuy4gJL3V4I0K/" %}
-[Install IDEA](https://app.gitbook.com/o/ewXgnQpSEObr0Vh0WSOj/s/M6r7H9BSuy4gJL3V4I0K/)
+{% content-ref url="broken-reference" %}
+[Broken link](broken-reference)
 {% endcontent-ref %}
 
-IDEA is a framework on which you can deploy multiple independent modules based on your own requirements. Select the module below to learn more.&#x20;
+IDEA is a framework on which you can deploy multiple independent modules based on your own requirements. Select the module below to learn more.
 
 {% hint style="info" %}
 * You can add module(s) on an existing IDEA clusters
@@ -23,21 +22,21 @@ IDEA is a framework on which you can deploy multiple independent modules based o
 {% endhint %}
 
 {% content-ref url="https://app.gitbook.com/o/ewXgnQpSEObr0Vh0WSOj/s/QthiamUzKn8KJLl0hYBf/" %}
-[Virtual Desktop Interface](https://app.gitbook.com/o/ewXgnQpSEObr0Vh0WSOj/s/QthiamUzKn8KJLl0hYBf/)
+[Virtual Desktop Interface (VDI)](https://app.gitbook.com/o/ewXgnQpSEObr0Vh0WSOj/s/QthiamUzKn8KJLl0hYBf/)
 {% endcontent-ref %}
 
 {% content-ref url="https://app.gitbook.com/o/ewXgnQpSEObr0Vh0WSOj/s/LGamNPuOYtjAP3GFfRJO/" %}
-[Scale-Out Workloads (HPC Simulations)](https://app.gitbook.com/o/ewXgnQpSEObr0Vh0WSOj/s/LGamNPuOYtjAP3GFfRJO/)
+[Scale-Out Workloads](https://app.gitbook.com/o/ewXgnQpSEObr0Vh0WSOj/s/LGamNPuOYtjAP3GFfRJO/)
 {% endcontent-ref %}
 
-{% content-ref url="https://app.gitbook.com/o/ewXgnQpSEObr0Vh0WSOj/s/2fYhGrE1N98BfOc1T8n3/" %}
-[Directory Services (LDAP or Active Directory)](https://app.gitbook.com/o/ewXgnQpSEObr0Vh0WSOj/s/2fYhGrE1N98BfOc1T8n3/)
+{% content-ref url="broken-reference" %}
+[Broken link](broken-reference)
 {% endcontent-ref %}
 
-&#x20;Refer to the Support page in case you need any sort of assistance
+Refer to the Support page in case you need any sort of assistance
 
-{% content-ref url="https://app.gitbook.com/o/ewXgnQpSEObr0Vh0WSOj/s/9OtbmuZYu8NBMrxD7tw5/" %}
-[Support](https://app.gitbook.com/o/ewXgnQpSEObr0Vh0WSOj/s/9OtbmuZYu8NBMrxD7tw5/)
+{% content-ref url="broken-reference" %}
+[Broken link](broken-reference)
 {% endcontent-ref %}
 
 ## Key Features <a href="#easy-installation" id="easy-installation"></a>
