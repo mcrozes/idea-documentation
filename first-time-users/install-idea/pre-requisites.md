@@ -12,7 +12,9 @@ Installation of IDEA is automated via Docker. Make sure you have the following t
 
 You must have Docker installed on your environment if you want to proceed to a standard 1-click installation. If needed, you can download and install Docker from the [official Docker website](https://docs.docker.com/get-docker/).
 
-Make sure your non-admins users have the permissions [to run Docker by following this guide.](https://docs.docker.com/engine/install/linux-postinstall/)
+{% hint style="warning" %}
+[Refer to this guide to avoid permissions issues](https://docs.docker.com/engine/install/linux-postinstall/) while running Docker as a non-root user.
+{% endhint %}
 
 {% hint style="info" %}
 **Docker License:** Please ensure you or your organization adheres to the [Docker Subscription Service Agreement](https://www.docker.com/legal/docker-subscription-service-agreement/). Otherwise you must proceed to a manual installation.
