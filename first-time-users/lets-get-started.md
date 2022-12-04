@@ -9,6 +9,6 @@ Now that you have installed your cluster, it's time for you to become more famil
   * [x] [analytics](../best-practices/analytics/ "mention")
   * [x] [budget](../best-practices/budget/ "mention")
   * [x] [security](../best-practices/security/ "mention")
-* [x] Learn how you can [patch-update-idea-module.md](cluster-operations/patch-update-idea-module.md "mention")
+* [x] Learn how you can [patch-idea-module.md](cluster-operations/patch-idea-module.md "mention")
 
 We are here to help, reach out to your AWS contact if you have any question about IDEA.

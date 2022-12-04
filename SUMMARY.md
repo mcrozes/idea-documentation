@@ -15,7 +15,7 @@
 * [Let's get started](first-time-users/lets-get-started.md)
 * [Cluster operations](first-time-users/cluster-operations/README.md)
   * [Uninstall IDEA](first-time-users/cluster-operations/uninstall-idea.md)
-  * [Patch/Update IDEA module](first-time-users/cluster-operations/patch-update-idea-module.md)
+  * [Patch IDEA module](first-time-users/cluster-operations/patch-idea-module.md)
 
 ## 🤖 Modules
 
