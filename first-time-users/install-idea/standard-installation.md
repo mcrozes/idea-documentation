@@ -93,15 +93,18 @@ cluster-manager		identity-provider	vdc
 
 3 - Update your parameter(s)
 
-In this example, we will show you how to update the default parameter named "vdc.dcv\_session.allowed\_instance\_family\_types" (this parameter control what type of EC2 instance can be provisioned as virtual desktops by the end users).
+In this example, we will show you how to update the following  parameters:
 
-The screen below (generated during `idea-admin.sh quick-setup` ) reports virtual desktops can only use t3 or g4dn instance types.
+* vdc.dcv\_session.allowed\_sessions\_per\_user: Number of virtual desktops per user (default to 5)
+* vdc.dcv\_session.instance\_types.allow: Control what type of EC2 instance can be provisioned as virtual desktops by the end users (default to t3, g4dn, g4ad, m6a and m6g).
 
-<figure><img src="../../.gitbook/assets/Screen Shot 2022-11-15 at 1.49.09 PM.png" alt=""><figcaption><p>Default parameters showing only 2 instance types being allowed for virtual desktops</p></figcaption></figure>
+The screen below (generated during `idea-admin.sh quick-setup` ) reports the default values for both sessions
 
-To update this parameter, edit  \``` ~/.idea/clusters/<YOUR_CLUSTER_NAME>/<YOUR_REGION>/config/vdc/settings.yml` `` and update the relevant key.
+<figure><img src="../../.gitbook/assets/Screen Shot 2022-12-04 at 1.25.49 PM.png" alt=""><figcaption></figcaption></figure>
 
-![](<../../.gitbook/assets/Screen Shot 2022-11-15 at 1.56.33 PM.png>)
+To update these parameters, edit  \``` ~/.idea/clusters/<YOUR_CLUSTER_NAME>/<YOUR_REGION>/config/vdc/settings.yml` `` and update the relevant keys.
+
+<figure><img src="../../.gitbook/assets/Screen Shot 2022-12-04 at 1.29.26 PM.png" alt=""><figcaption><p>Increased the number of allowed sessions and added c6i and r6i</p></figcaption></figure>
 
 4 - Reload the installer configuration
 
@@ -111,9 +114,9 @@ To update this parameter, edit  \``` ~/.idea/clusters/<YOUR_CLUSTER_NAME>/<YOUR_
 
 5 - Validate the installer will now use your new parameter(s)
 
-Reloading configuration should take less than 5 seconds. Once done, validate your parameter(s) is/are have been successfully updated. The screen below confirm "vdc.dcv\_session.allowed\_instance\_family\_types" has been correctly updated with my changes.
+Reloading configuration should take less than 5 seconds. Once done, validate your parameter(s) is/are have been successfully updated. The screen below confirm "vdc.dcv\_session.allowed\_sessions\_per\_user" and "vdc.dcv\_session.instance\_types.allow" have been correctly updated with my changes.
 
-<figure><img src="../../.gitbook/assets/Screen Shot 2022-11-15 at 1.58.23 PM.png" alt=""><figcaption><p>IDEA will now configure the environment with your changes</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screen Shot 2022-12-04 at 1.31.10 PM.png" alt=""><figcaption><p>IDEA will now configure the environment with your changes</p></figcaption></figure>
 
 6 - Continue the installation
 
@@ -126,3 +129,5 @@ Example:&#x20;
 
 If you want to update **scheduler.ec2.enable\_detailed\_monitoring,** you will have to edit `` \~/.idea/clusters/\<YOUR\_CLUSTER\_NAME>/\<YOUR\_REGION>/config/**scheduler**/settings.yml and find `enable_detailed_monitoring` key within the `ec2` section.
 {% endhint %}
+
+You can also change these settings post-installation. Refer to [cluster-operations](../cluster-operations/ "mention")for more details.
