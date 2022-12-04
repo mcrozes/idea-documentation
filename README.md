@@ -6,7 +6,7 @@ With Integrated Digital Engineering on AWS, in a matter of hours engineering app
 
 The solution features a large selection of compute resources; fast network backbone; unlimited storage;  budget and cost management directly integrated within AWS. The solution also deploys a user interface (UI) and automation tools that allows you to create your own queues, scheduler resources, Amazon Machine Images (AMIs), software and libraries.&#x20;
 
-This solution is designed to provide a production ready reference implementation to be a starting point for deploying an AWS environment to run scale-out workloads, allowing you to focus on running simulations designed to solve complex computational problems.
+This solution is designed to provide a production ready reference implementation to be a starting point for digital engineering workloads, allowing engineering applications administrators and the engineers, analysts and designers they support to spend more time focusing on innovation.
 
 ## How to get started
 
