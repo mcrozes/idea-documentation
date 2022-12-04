@@ -111,7 +111,7 @@ rm -rf .bearer
 
 <summary>Answer</summary>
 
-See [patch-idea-module.md](../first-time-users/cluster-operations/patch-idea-module.md "mention")
+See [patch-idea-module.md](../first-time-users/cluster-operations/update-idea-cluster/patch-idea-module.md "mention")
 
 </details>
 

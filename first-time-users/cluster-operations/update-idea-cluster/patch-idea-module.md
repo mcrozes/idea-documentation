@@ -1,18 +1,18 @@
-# Patch/Update IDEA module
+# Patch IDEA module
 
 To patch/update one IDEA module, run the following `idea-admin.sh patch <MODULE_NAME>`  command.
 
 ## Pre-Requisite
 
-You must have completed your [developer-onboarding.md](../../developer-portal/developer-onboarding.md "mention") and generated the local `dist` archives by running `invoke clean build package`
+You must have completed your [developer-onboarding.md](../../../developer-portal/developer-onboarding.md "mention") and generated the local `dist` archives by running `invoke clean build package`
 
 You also must be running this command on a system that has the permission to upload objects into the s3 bucket created during the CDK bootstrap phase.
 
 ## Workflow
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption><p>Patch process</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption><p>Patch process</p></figcaption></figure>
 
-1. IDEA admin clones the latest IDEA codebase locally. Onboard to [developer-onboarding.md](../../developer-portal/developer-onboarding.md "mention")and run `invoke clean build package` to create the latest `dist` archives
+1. IDEA admin clones the latest IDEA codebase locally. Onboard to [developer-onboarding.md](../../../developer-portal/developer-onboarding.md "mention")and run `invoke clean build package` to create the latest `dist` archives
 2. IDEA admin triggers `idea-admin.sh patch <MODULE> --aws-region <REGION> --cluster-name <CLUSTER_NAME>`
 3. idea-admin.sh will retrieve the latest `dist` archive(s) (inside the `dist` folder generated during the `invoke clean build` package command)
 4. idea-admin.sh will upload the `dist` file(s) to the S3 bucket created by the `cdk bootstrap` command during the installation of IDEA
