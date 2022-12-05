@@ -1,7 +1,7 @@
-# Patch IDEA module
+# Patch IDEA module (idea-admin.sh patch)
 
 {% hint style="info" %}
-Use the **Patch** command  if you have updated the codebase of one of your module (e.g: developed new API, updated a function/class). Refer to [update-idea-configuration.md](update-idea-configuration.md "mention") for other types of updates.
+Use the **Patch** command  if you have updated the codebase of one of your module (e.g: developed new API, updated a function/class). Refer to [update-idea-configuration-idea-admin.sh-config.md](update-idea-configuration-idea-admin.sh-config.md "mention") for other types of updates.
 {% endhint %}
 
 To patch/update one IDEA module, run the following `idea-admin.sh patch <MODULE_NAME>`  command.

@@ -1,7 +1,7 @@
-# Update IDEA configuration
+# Update IDEA configuration (idea-admin.sh config)
 
 {% hint style="info" %}
-Use the **Config** command if you want to make a configuration change (e.g: enable SES, point DCV driver to a new version, change default security group ...). Refer to [update-idea-configuration.md](update-idea-configuration.md "mention") for other types of updates.
+Use the **Config** command if you want to make a configuration change (e.g: enable SES, point DCV driver to a new version, change default security group ...). Refer to [update-idea-configuration-idea-admin.sh-config.md](update-idea-configuration-idea-admin.sh-config.md "mention") for other types of updates.
 {% endhint %}
 
 `idea-admin.sh config` utility is a powerful tool that allow you to control the vast majority of your cluster configuration/parameters without having to manually access the configuration files. In this example, we will demonstrate how you can easily update the integration of IDEA with AWS Backup.
