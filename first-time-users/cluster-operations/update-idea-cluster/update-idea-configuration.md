@@ -52,11 +52,11 @@ This utility also support regular expression as part of the `--query/-q`argument
 ./idea-admin.sh config show \
   --cluster-name <CLUSTER_NAME> \
   --aws-region <REGION>
-  --query "vdc.vdi_host_backup.enabled"
+  --query "cluster.backups.enabled"
 +-----------------------------+-------+---------+
 | Key                         | Value | Version |
 +-----------------------------+-------+---------+
-| vdc.vdi_host_backup.enabled | True  | 1       |
+| cluster.backups.enabled.    | True  | 1       |
 +-----------------------------+-------+---------+
 ```
 
@@ -68,16 +68,16 @@ To update this entry, run the `./idea-admin.sh config set` command
 
 ```
 ./idea-admin.sh config set \
-  Key=vdc.vdi_host_backup.enabled,Type=bool,Value=False \
+  Key=cluster.backups.enabled,Type=bool,Value=False \
   --cluster-name <CLUSTER_NAME> \
   --aws-region <REGION>
 +-----------------------------+-------+
 | Key                         | Value |
 +-----------------------------+-------+
-| vdc.vdi_host_backup.enabled | False |
+| cluster.backups.enabled.    | False |
 +-----------------------------+-------+
 ? Are you sure you want to update above config entries? Yes
-updating config: vdc.vdi_host_backup.enabled = False
+updating config: cluster.backups.enabled = False
 
 ```
 
@@ -104,11 +104,11 @@ You can now re-run the `./idea-admin.sh config show` command to validate the con
 ./idea-admin.sh config show \
   --cluster-name <CLUSTER_NAME> \
   --aws-region <REGION>
-  --query "vdc.vdi_host_backup.enabled"
+  --query "cluster.backups.enabled"
 +-----------------------------+-------+---------+
 | Key                         | Value | Version |
 +-----------------------------+-------+---------+
-| vdc.vdi_host_backup.enabled | False | 2       |
+| cluster.backups.enabled     | False | 2       |
 +-----------------------------+-------+---------+
 
 ```
