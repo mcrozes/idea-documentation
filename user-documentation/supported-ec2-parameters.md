@@ -140,6 +140,10 @@ If you specify more than 1 subnet and have `placement_group` set to True, IDEA w
 
 ## Storage <a href="#storage" id="storage"></a>
 
+{% hint style="info" %}
+[Refer to the Shared-Storage module](https://docs.ide-on-aws.com/shared-storage/introduction) if you are looking for more persistent / non-job specify storage backed.
+{% endhint %}
+
 ### EBS <a href="#ebs" id="ebs"></a>
 
 #### **keep\_ebs**
