@@ -64,3 +64,52 @@ Alternatively, you can validate this setting via the web interface under "**Clus
 
 ![](<../../../.gitbook/assets/Screen Shot 2022-12-04 at 5.01.18 PM.png>)
 
+To update this entry, run the `./idea-admin.sh config set` command
+
+```
+./idea-admin.sh config set \
+  Key=vdc.vdi_host_backup.enabled,Type=bool,Value=False \
+  --cluster-name <CLUSTER_NAME> \
+  --aws-region <REGION>
++-----------------------------+-------+
+| Key                         | Value |
++-----------------------------+-------+
+| vdc.vdi_host_backup.enabled | False |
++-----------------------------+-------+
+? Are you sure you want to update above config entries? Yes
+updating config: vdc.vdi_host_backup.enabled = False
+
+```
+
+{% hint style="info" %}
+
+
+entry must be of below format: Key=KEY\_NAME,Type=\[str|int|float|bool|list|list|list|list],Value=\[VALUE|\[VALUE1,VALUE2,...]] ... config key names cannot contain: comma(,), colon(:)
+
+Examples:
+
+1. To set a string config type: ./idea-admin.sh config set Key=global-settings.string\_val,Type=string,Value=stringcontent --cluster-name YOUR\_CLUSTER\_NAME --aws-region YOUR\_AWS\_REGION
+2. To set an integer config type: ./idea-admin.sh config set Key=global-settings.int\_val,Type=int,Value=12 --cluster-name YOUR\_CLUSTER\_NAME --aws-region YOUR\_AWS\_REGION
+3. To set a config with list of strings: ./idea-admin.sh config set "Key=my\_config.string\_list,Type=list,Value=value1,value2" --cluster-name YOUR\_CLUSTER\_NAME --aws-region YOUR\_AWS\_REGION
+4. Update multiple config entries: ./idea-admin.sh config set Key=global-settings.string\_val,Type=string,Value=stringcontent\
+   "Key=global-settings.integer\_list,Type=list,Value=1,2"\
+   "Key=global-settings.string\_list,Type=list,Value=str1,str2"\
+   \--cluster-name YOUR\_CLUSTER\_NAME\
+   \--aws-region YOUR\_AWS\_REGION
+{% endhint %}
+
+You can now re-run the `./idea-admin.sh config show` command to validate the configuration in the IDEA database has been updated correctly
+
+```
+./idea-admin.sh config show \
+  --cluster-name <CLUSTER_NAME> \
+  --aws-region <REGION>
+  --query "vdc.vdi_host_backup.enabled"
++-----------------------------+-------+---------+
+| Key                         | Value | Version |
++-----------------------------+-------+---------+
+| vdc.vdi_host_backup.enabled | False | 2       |
++-----------------------------+-------+---------+
+
+```
+
