@@ -4,7 +4,30 @@
 Use the **Config** command if you want to make a configuration change (e.g: enable SES, point DCV driver to a new version ...). Refer to [update-idea-configuration.md](update-idea-configuration.md "mention") for other types of updates.
 {% endhint %}
 
-`idea-admin.sh config` utility is a powerful tool that allow you to control the vast majority of your cluster configuration/parameters without having to manually access the configuration files.
+`idea-admin.sh config` utility is a powerful tool that allow you to control the vast majority of your cluster configuration/parameters without having to manually access the configuration files. In this example, we will demonstrate how you can easily update the integration of AWS Backup.
+
+## Workflow
+
+<figure><img src="../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+
+* Admins run the `idea-admin.sh config` utility to retrieve/update the current configuration
+* Configuration change is updated on the Amazon DynamoDB table associated to the IDEA cluster
+* DynamoDB Stream update the relevant IDEA modules after a configuration parameter has been changed
+
+{% hint style="info" %}
+Configuration keys are prefixed with the module information.&#x20;
+
+See some examples below:
+
+* scheduler.security\_group\_id is linked to the Scheduler module&#x20;
+* vdc.dcv\_host\_security\_group\_id is linked to the VDC module
+* directoryservice.root\_username\_secret\_arn is linked to the DirectoryService module
+* etc ...&#x20;
+{% endhint %}
+
+
+
+## ./idea-admin.sh config show
 
 You can retrieve the current configuration of your IDEA cluster by running `./idea-admin.sh config show` utility.&#x20;
 
@@ -67,6 +90,8 @@ First, query your IDEA configuration to verify if the integration is active:
 Alternatively, you can validate this setting via the web interface under "**Cluster Settings**":
 
 ![](<../../../.gitbook/assets/Screen Shot 2022-12-04 at 5.01.18 PM.png>)
+
+## ./idea-admin.sh config set
 
 To update this configuration parameter, run the `./idea-admin.sh config set` command and pass the `Key` argument
 
