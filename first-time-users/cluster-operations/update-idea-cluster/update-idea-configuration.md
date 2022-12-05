@@ -113,3 +113,6 @@ You can now re-run the `./idea-admin.sh config show` command to validate the con
 
 ```
 
+You can also validate the new setting by using the web interface and confirming the integration with AWS Backup is now disabled.
+
+![](<../../../.gitbook/assets/Screen Shot 2022-12-05 at 11.14.21 AM.png>)
