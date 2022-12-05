@@ -8,7 +8,7 @@
 * Retrieve connection endpoints: `show-connection-info`
 * Run integration test for all modules: `run-integration-tests`
 * Update your cluster configuration via `config`  ( [update-idea-configuration.md](../first-time-users/cluster-operations/update-idea-cluster/update-idea-configuration.md "mention"))
-* Patch an existing cluster via `patch` ( [patch-idea-module.md](../first-time-users/cluster-operations/update-idea-cluster/patch-idea-module.md "mention"))
+* Patch an existing cluster via `patch` ( [patch-idea-module-idea-admin.sh-patch.md](../first-time-users/cluster-operations/update-idea-cluster/patch-idea-module-idea-admin.sh-patch.md "mention"))
 * Upgrade backend component via `deploy` ( [update-idea-backend-resource.md](../first-time-users/cluster-operations/update-idea-cluster/update-idea-backend-resource.md "mention"))
 * Manage additional FileSystems easily via `shared-storage` ( [Storage Management](https://app.gitbook.com/s/5SSt4opQQGbm5tAfuEqy/storage-management "mention"))
 

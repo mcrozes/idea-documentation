@@ -16,7 +16,7 @@
 * [Cluster operations](first-time-users/cluster-operations/README.md)
   * [Uninstall IDEA](first-time-users/cluster-operations/uninstall-idea.md)
   * [Update IDEA cluster](first-time-users/cluster-operations/update-idea-cluster/README.md)
-    * [Patch IDEA module](first-time-users/cluster-operations/update-idea-cluster/patch-idea-module.md)
+    * [Patch IDEA module (idea-admin.sh patch)](first-time-users/cluster-operations/update-idea-cluster/patch-idea-module-idea-admin.sh-patch.md)
     * [Update IDEA configuration](first-time-users/cluster-operations/update-idea-cluster/update-idea-configuration.md)
     * [Update IDEA backend resource](first-time-users/cluster-operations/update-idea-cluster/update-idea-backend-resource.md)
 
