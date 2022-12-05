@@ -1,6 +1,6 @@
 # IDEA CLI utility
 
-`idea-admin.sh` utility is designed to simplify your interaction with your IDEA environment. With this simple tool, you can install a new environment, delete an existing cluster, update the configuration of a live environment or even retrieve the connection endpoints of your deployment.
+`idea-admin.sh` utility is designed to simplify your interaction with your IDEA environment. With this simple tool, you can install a new environment, delete an existing cluster, update the configuration of a live environment or even retrieve the connection endpoints of your deployment via simple 1-liner commands.
 
 ```bash
   about                    print IDEA release version info
@@ -26,11 +26,14 @@
 
 ```
 
-* Install a new cluster: `quick-setup`
+* Install a new cluster: `quick-setup` ( [install-idea](../first-time-users/install-idea/ "mention"))
 * Generate an empty `values_files.yml` that can be used as base skeleton: `quick-setup-help`
 * Delete an existing environment: `delete`
 * Retrieve connection endpoints: `show-connection-info`
 * Run integration test for all modules: `run-integration-tests`
+* Update your cluster configuration via `config`  ( [update-idea-configuration.md](../first-time-users/cluster-operations/update-idea-cluster/update-idea-configuration.md "mention"))
+* Patch an existing cluster via `patch` ( [patch-idea-module.md](../first-time-users/cluster-operations/update-idea-cluster/patch-idea-module.md "mention"))
+* Upgrade backend component via `deploy` ( [update-idea-backend-resource.md](../first-time-users/cluster-operations/update-idea-cluster/update-idea-backend-resource.md "mention"))
 
 {% hint style="info" %}
 Always use -h at the end of your command to list all available options
