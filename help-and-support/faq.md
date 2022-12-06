@@ -186,7 +186,55 @@ See [Shared Storage](https://app.gitbook.com/o/ewXgnQpSEObr0Vh0WSOj/s/5SSt4opQQG
 
 </details>
 
+<details>
 
+<summary>How do I automatically add new tags during the installation?</summary>
+
+Update the last section of idea/idea-administrator/resources/config/templates/global-settings/settings.yml
+
+```
+# provide custom tags for all resources created by IDEA
+# for eg. to add custom tags, tags as below:
+# custom_tags:
+#   - Key=custom:MyTagName,Value=MyTagValue
+#   - Key=AnotherExampleName,Value=Another Example Value
+custom_tags: []
+```
+
+</details>
+
+<details>
+
+<summary>How to automatically add IAM Managed Policies to existing IDEA IAM roles</summary>
+
+Add the managed policy ARN in cluster settings: source/idea-administrator/resources/config/templates/cluster/settings.yml&#x20;
+
+All roles will contain the policy(ies) you have added to the list.
+
+</details>
+
+<details>
+
+<summary><strong>I am using an existing VPC and scheduler module is not working (not able to query the internal DNS)</strong></summary>
+
+IDEA create a route53 private hosted zone.&#x20;
+
+If you try to curl any DNS from this Route53 Zone,and get no result, even though the Private Zone is assigned to the VPC
+
+```
+# nslookup 
+internal-alb.idea-demo.us
+-east-2.local
+Server: 10.110.0.2
+Address: 10.110.0.2#53
+** server can't find 
+internal-alb.idea-demo.us
+-east-2.local: NXDOMAIN
+```
+
+To fix this, enable DNS hostname/resolution on your VPC
+
+</details>
 
 ## Logs
 
@@ -220,11 +268,24 @@ Logging can configured per application server using IDEA Cluster Configuration. 
 
 <details>
 
-<summary>Where are the Node Bootstrap logs stored (e.g: module not started correctly)</summary>
+<summary>How to debug a module not starting correctly</summary>
 
-Log in to the EC2 machine and check the logs under /root/boostrap/logs.&#x20;
+1 - Log in to the EC2 machine and check the logs under **/root/boostrap/logs.**
+
+Try to find some potential issue(s) by looking for keywords like: &#x20;
+
+* error
+* fatal
+* denied
+* permission
 
 All infrastructure nodes such as directoryservice (openldap-server), scheduler, bastion-host, virtual-desktop controller use a standard directory structure during bootstrap.
+
+2 - Check if supervisord is running correctly (/opt/idea/python/latest/bin/supervisorctl status), if not check /var/log/supervisord.log
+
+3 - Depending your module, you can also check the app log via /opt/idea/app/logs
+
+Make sure to run supervisorctl restart all after making any changes
 
 </details>
 
