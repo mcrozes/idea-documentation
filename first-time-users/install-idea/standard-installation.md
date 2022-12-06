@@ -55,6 +55,48 @@ checking endpoint status for cluster: idea-test, url: https://idea-test-external
 +------------------------------+---------------------------------------------------------------------------------------------------+---------+
 ```
 
+### Resume installation in case of failure
+
+IDEA deployment creates multiple stacks based on modules selected for deployment. The total time of deployment can range anywhere between 40 mins to 1.5 hours.
+
+After a CloudFormation stack is deployed for a module, the status of each module maintained in DynamoDB changes from **not-deployed** → **deployed**.
+
+You can check the deployment status per module by running:&#x20;
+
+```
+./idea-admin.sh list-modules  \
+  --cluster-name <CLUSTER_NAME> \
+  --aws-region <REGION>
+ 
+# example:
+./idea-admin.sh list-modules --cluster-name idea-dev1 --aws-region us-east-1
++----------------------------+------------------+--------+----------------------------+--------------+----------+
+| Name                       | Module ID        | Type   | Stack Name                 | Version      | Status   |
++----------------------------+------------------+--------+----------------------------+--------------+----------+
+| metrics                    | metrics          | stack  | idea-dev1-metrics          | 3.0.0-beta.1 | deployed |
+| cluster-manager            | cluster-manager  | app    | idea-dev1-cluster-manager  | 3.0.0-beta.1 | deployed |
+| directoryservice           | directoryservice | stack  | idea-dev1-directoryservice | 3.0.0-beta.1 | deployed |
+| virtual-desktop-controller | vdc              | app    | idea-dev1-vdc              | 3.0.0-beta.2 | deployed |
+| cluster                    | cluster          | stack  | idea-dev1-cluster          | 3.0.0-beta.2 | deployed |
+| scheduler                  | scheduler        | app    | idea-dev1-scheduler        | 3.0.0-beta.1 | deployed |
+| global-settings            | global-settings  | config | -                          | -            | deployed |
+| analytics                  | analytics        | stack  | idea-dev1-analytics        | 3.0.0-beta.1 | deployed |
+| bastion-host               | bastion-host     | stack  | idea-dev1-bastion-host     | 3.0.0-beta.1 | deployed |
++----------------------------+------------------+--------+----------------------------+--------------+----------+
+```
+
+If you encounter any errors during deployment, in one of the stacks, the default behavior is to rollback the deployment for that particular stack. Try to investigate the cause of the problem using the Event log displayed by CDK.&#x20;
+
+If you are able to identify and fix the problem, you can safely run the below command to re-trigger the installation. Process will resume automatically after the last known operation:
+
+```
+./idea-admin.sh deploy all \
+  --cluster-name <CLUSTER_NAME> \
+  --aws-region <REGION>
+```
+
+If only one module has failed, you can run `./idea-admin.sh deploy <MODULE_NAME>` directly.
+
 ## Install IDEA using existing AWS resources
 
 As an alternative, you can install IDEA using existing resources running on your AWS environment such as VPC, Subnets, Filesystems, OpenSearch clusters and more.&#x20;
