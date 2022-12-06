@@ -103,9 +103,9 @@ rm -rf .bearer
 
 <details>
 
-<summary>How do I patch/update an IDEA module</summary>
+<summary>How do I patch/update/change the configuration  an IDEA module</summary>
 
-See [patch-idea-module.md](../first-time-users/cluster-operations/update-idea-cluster/patch-idea-module.md "mention")
+See [update-idea-cluster](../first-time-users/cluster-operations/update-idea-cluster/ "mention")
 
 </details>
 
@@ -114,6 +114,14 @@ See [patch-idea-module.md](../first-time-users/cluster-operations/update-idea-cl
 <summary>How do I uninstall IDEA?</summary>
 
 See [uninstall-idea.md](../first-time-users/cluster-operations/uninstall-idea.md "mention")
+
+</details>
+
+<details>
+
+<summary>How do I resume a failed IDEA installation</summary>
+
+See [#how-do-i-resume-a-failed-installation](faq.md#how-do-i-resume-a-failed-installation "mention")
 
 </details>
 
@@ -167,6 +175,14 @@ Subtitle can be customized by running the below command:
 
 
 ```
+
+</details>
+
+<details>
+
+<summary>How do I configure automatic mount for additional File-system (FSx Lustre/OnTAP/OpenZFS/Windows, EFS)</summary>
+
+See [Shared Storage](https://app.gitbook.com/o/ewXgnQpSEObr0Vh0WSOj/s/5SSt4opQQGbm5tAfuEqy/ "mention") module
 
 </details>
 
