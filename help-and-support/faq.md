@@ -2,11 +2,9 @@
 
 ## Cluster Management
 
-### How do I safe-list a new IP to access my IDEA environment
-
 <details>
 
-<summary>Answer</summary>
+<summary>How do I safe-list a new IP to access my IDEA environment</summary>
 
 To safelist a new IP, navigate to VPC > Managed Prefix List and add your new entry into the Prefix List created by IDEA.
 
@@ -22,11 +20,9 @@ Alternatively, you can run the following `idea-admin.sh` command:
 
 </details>
 
-### I never received the welcome email after installing IDEA, how can I create an admin user?
-
 <details>
 
-<summary>Answer</summary>
+<summary>I never received the welcome email after installing IDEA, how can I create an admin user?</summary>
 
 Run the following commands to create a new admin user via IDEA APIs
 
@@ -105,31 +101,25 @@ rm -rf .bearer
 
 </details>
 
-### How do I patch/update an IDEA module
-
 <details>
 
-<summary>Answer</summary>
+<summary>How do I patch/update an IDEA module</summary>
 
 See [patch-idea-module.md](../first-time-users/cluster-operations/update-idea-cluster/patch-idea-module.md "mention")
 
 </details>
 
-### How do I uninstall IDEA?
-
 <details>
 
-<summary>Answer</summary>
+<summary>How do I uninstall IDEA?</summary>
 
 See [uninstall-idea.md](../first-time-users/cluster-operations/uninstall-idea.md "mention")
 
 </details>
 
-### **How to customize the logo/title or subtitle of my IDEA environment**
-
 <details>
 
-<summary><strong>Answer</strong></summary>
+<summary>How to customize the logo/title or subtitle of my IDEA environment</summary>
 
 The logo, title and subtitle of the Web Portal can be customized using configurations.
 
@@ -184,11 +174,9 @@ Subtitle can be customized by running the below command:
 
 ## Logs
 
-### Where are the application logs stored?
-
 <details>
 
-<summary>Answer</summary>
+<summary>Where are the application logs stored?</summary>
 
 IDEA modules such as cluster-manager, virtual-desktop-controller and scheduler run a python based application server.
 
@@ -214,11 +202,9 @@ Logging can configured per application server using IDEA Cluster Configuration. 
 
 </details>
 
-### Where are the Node Bootstrap logs stored (e.g: module not started correctly)
-
 <details>
 
-<summary>Answer</summary>
+<summary>Where are the Node Bootstrap logs stored (e.g: module not started correctly)</summary>
 
 Log in to the EC2 machine and check the logs under /root/boostrap/logs.&#x20;
 
