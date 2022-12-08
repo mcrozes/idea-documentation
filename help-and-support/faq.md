@@ -6,6 +6,8 @@
 
 <summary>How do I update Boto3</summary>
 
+Boto3 ([https://boto3.amazonaws.com/v1/documentation/api/latest/index.html](https://boto3.amazonaws.com/v1/documentation/api/latest/index.html)) is the official AWS Python SDK. We recommend to update boto3 on a regular basis in order to stay up-to-date with the latest AWS releases (new instance types ...)
+
 To update Boto3, run the following patch command:
 
 ```
