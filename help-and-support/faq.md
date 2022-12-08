@@ -4,6 +4,24 @@
 
 <details>
 
+<summary>How do I update Boto3</summary>
+
+To update Boto3, run the following patch command:
+
+```
+./idea-admin.sh patch scheduler \
+  --cluster-name <CLUSTER_NAME> \
+  --aws-region <REGION> \
+  --force \
+  --patch-command 'sudo idea_pip install boto3 --upgrade && sudo supervisorctl restart all'
+```
+
+Refer to [patch-idea-module.md](../first-time-users/cluster-operations/update-idea-cluster/patch-idea-module.md "mention") to learn more about the patch utility
+
+</details>
+
+<details>
+
 <summary>How do I safe-list a new IP to access my IDEA environment</summary>
 
 To safelist a new IP, navigate to VPC > Managed Prefix List and add your new entry into the Prefix List created by IDEA.
