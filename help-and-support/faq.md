@@ -256,7 +256,7 @@ To fix this, enable DNS hostname/resolution on your VPC
 
 </details>
 
-## Logs
+## IDEA Logs
 
 <details>
 
@@ -309,3 +309,21 @@ Make sure to run supervisorctl restart all after making any changes
 
 </details>
 
+## Scale-Out Workloads Jobs
+
+<details>
+
+<summary>My job is not starting, how can I check the bootstrap/setup logs</summary>
+
+If your job is not starting, you can verify if the provisioned capacity is configured correctly by checking the bootstrap logs under `/apps/<CLUSTER>/scheduler/jobs`
+
+Logs structure:
+
+* jobs/
+  * \<job\_id>/
+    * \<job\_type> (bootstrap or compute\_node setup)
+      * \<EC2 Host>
+
+Example: `/apps/idea-demo/scheduler/jobs/98/logs/ip-10-110-4-189`
+
+</details>
