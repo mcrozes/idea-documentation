@@ -9,6 +9,8 @@
 * [Control my jobs](user-documentation/control-my-jobs.md)
 * [Supported EC2 parameters](user-documentation/supported-ec2-parameters.md)
 * [Job Storage](user-documentation/job-storage.md)
+* [Troubleshooting](user-documentation/troubleshooting/README.md)
+  * [My job is not starting](user-documentation/troubleshooting/my-job-is-not-starting.md)
 
 ## Admin Documentation
 
