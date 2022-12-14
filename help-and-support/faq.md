@@ -327,3 +327,11 @@ Logs structure:
 Example: `/apps/idea-demo/scheduler/jobs/98/logs/ip-10-110-4-189`
 
 </details>
+
+<details>
+
+<summary>How do I add additional logic to be executed on my compute nodes?</summary>
+
+Edit `/apps/<CLUSTER>/scheduler/compute_node/userdata_customizations.sh` if you want to add your own code to the compute node(s). Script is executed at the very end of the bootstrap sequence.
+
+</details>
