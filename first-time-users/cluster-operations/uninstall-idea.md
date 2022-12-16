@@ -6,7 +6,7 @@ Make sure to have removed all backups from AWS Backup (if applicable).  Read mor
 
 To uninstall IDEA, run `idea-admin.sh delete-cluster` command with the following arguments:
 
-<table><thead><tr><th>Argument</th><th>Description</th><th data-type="checkbox">Required ?</th></tr></thead><tbody><tr><td>--cluster-name</td><td>Name of your IDEA cluster  (e.g: idea-test)</td><td>true</td></tr><tr><td>--aws-region</td><td>Region where your IDEA cluster is installed</td><td>true</td></tr><tr><td>--delete-bootstrap</td><td>Delete the S3 bucket created by CDK</td><td>false</td></tr><tr><td>--delete-databases</td><td>Delete DynamoDB tables associated to your cluster</td><td>false</td></tr><tr><td>--force</td><td>Skip confirmation prompts</td><td>false</td></tr></tbody></table>
+<table><thead><tr><th>Argument</th><th>Description</th><th data-type="checkbox">Required ?</th></tr></thead><tbody><tr><td>--cluster-name</td><td>Name of your IDEA cluster  (e.g: idea-test)</td><td>true</td></tr><tr><td>--aws-region</td><td>Region where your IDEA cluster is installed</td><td>true</td></tr><tr><td>--delete-bootstrap</td><td>Delete the S3 bucket created by CDK</td><td>false</td></tr><tr><td>--delete-databases</td><td>Delete DynamoDB tables associated to your cluster</td><td>false</td></tr><tr><td>--delete-backups</td><td>Delete backups from AWS Backups</td><td>false</td></tr><tr><td>--force</td><td>Skip confirmation prompts</td><td>false</td></tr></tbody></table>
 
 The uninstall command will also remove running instances such as virtual desktops if applicable.
 
@@ -16,14 +16,19 @@ The uninstall command will also remove running instances such as virtual desktop
 Deleting Analytics stack (if using OpenSearch) will take at least 20 minutes
 {% endhint %}
 
+{% hint style="warning" %}
+\--delete-backups will also delete any backups stored on AWS Backups.&#x20;
+{% endhint %}
+
 ```bash
+# add --delete-backups if you also want to delete backups
 ./idea-admin.sh delete-cluster \ 
   --delete-databases \
   --delete-bootstrap \
   --force \
   --aws-region us-east-2 \
   --cluster-name idea-beta
-
+  
 +------------------------------------+---------------------+--------------+---------------+---------+
 | Name                               | Instance Id         | Private IP   | Instance Type | Status  |
 +------------------------------------+---------------------+--------------+---------------+---------+
