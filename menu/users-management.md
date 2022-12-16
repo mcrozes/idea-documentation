@@ -67,3 +67,31 @@ Force Change Password: User will be required to change his/her password after th
 {% hint style="info" %}
 You cannot reset the password of a user if his/her confirmation status is not "Confirmed"
 {% endhint %}
+
+### Add a batch of users
+
+Login to the cluster manager and run `ideactl accounts batch-create-users` to create multiple users in a single command. Users informations (username/email ...) must be specified via a .csv file
+
+### ideactl accounts
+
+IDEA provides `ideactl` utility in case you cannot access the web interface but needs to interact with users. To get started, log in to the cluster manager EC2 machine and run `ideactl accounts`
+
+```
+ideactl accounts
+Usage: ideactl accounts [OPTIONS] COMMAND [ARGS]...
+
+  account management options
+
+Options:
+  --help  Show this message and exit.
+
+Commands:
+  batch-create-users  creates users from csv file
+  create-user         create new user account
+  delete-user         delete user
+  disable-user        disable user
+  enable-user         enable user
+  get-user            get user
+  list-users          list existing users
+  modify-user         update an existing user account
+```
