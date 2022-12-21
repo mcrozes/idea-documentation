@@ -74,7 +74,7 @@ Login to the cluster manager and run `ideactl accounts batch-create-users` to cr
 
 ### ideactl accounts
 
-IDEA provides `ideactl` utility in case you cannot access the web interface but needs to interact with users. To get started, log in to the cluster manager EC2 machine and run `ideactl accounts`
+IDEA provides `ideactl` utility in case you cannot access the web interface but needs to interact with users. To get started, log in to the **Cluster Manager** EC2 machine and run `ideactl accounts`
 
 ```
 ideactl accounts
@@ -94,4 +94,24 @@ Commands:
   get-user            get user
   list-users          list existing users
   modify-user         update an existing user account
+```
+
+For example, here is how to create a new user, setting a temp password and giving this user admin permission
+
+```bash
+# ideactl accounts create-user --email "mcrozes@myemail.com" --password "Password123@" --username "mcrozes2" --sudo --email-verified
+{
+  "username": "mcrozes2",
+  "email": "mcrozes@myemail.com",
+  "uid": 5068,
+  "gid": 5077,
+  "group_name": "mcrozes2-user-group",
+  "login_shell": "/bin/bash",
+  "home_dir": "/data/home/mcrozes2",
+  "sudo": true,
+  "status": "CONFIRMED",
+  "enabled": true,
+  "created_on": "2022-12-21T16:37:32.033000+00:00",
+  "updated_on": "2022-12-21T16:37:32.033000+00:00"
+}
 ```
