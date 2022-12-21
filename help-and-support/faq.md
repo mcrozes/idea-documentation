@@ -44,7 +44,27 @@ Alternatively, you can run the following `idea-admin.sh` command:
 
 <summary>I never received the welcome email after installing IDEA, how can I create an admin user?</summary>
 
-Run the following commands to create a new admin user via IDEA APIs
+Use `ideactl` If you cannot receive email from Cognito due to IT restriction. Login to the Cluster Manager EC2 instance and run `ideactl accounts create-user`
+
+<pre><code><strong># Make sure to run this command as root on the CLUSTER Manager
+</strong><strong># ideactl accounts create-user --email "mcrozes@myemail.com" --password "Password123@" --username "mcrozes2" --sudo --email-verified
+</strong>{
+  "username": "mcrozes2",
+  "email": "mcrozes@myemail.com",
+  "uid": 5068,
+  "gid": 5077,
+  "group_name": "mcrozes2-user-group",
+  "login_shell": "/bin/bash",
+  "home_dir": "/data/home/mcrozes2",
+  "sudo": true,
+  "status": "CONFIRMED",
+  "enabled": true,
+  "created_on": "2022-12-21T16:37:32.033000+00:00",
+  "updated_on": "2022-12-21T16:37:32.033000+00:00"
+}
+</code></pre>
+
+If you cannot use SSM, you can use `idea-admin.sh` . Run the following commands to create a new admin user via IDEA APIs
 
 <pre class="language-bash"><code class="lang-bash">IDEA_ADMIN_USER="username"
 IDEA_ADMIN_USER_PASSWORD="password"
