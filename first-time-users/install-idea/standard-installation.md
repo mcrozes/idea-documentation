@@ -13,8 +13,8 @@ Review [pre-requisites.md](pre-requisites.md "mention") section first
 Copy/Paste this command on your terminal to launch the installation
 
 ```
-curl https://raw.githubusercontent.com/awslabs/integrated-digital-engineering-on-aws/main/idea-admin.sh -o ~/idea-admin.sh \
-  && /bin/bash ~/idea-admin.sh quick-setup
+<NO_PUBLIC_LINK_AVAILABLE_YET>
+
 ```
 
 **Option2: Download the installer and execute it manually**
@@ -23,7 +23,10 @@ As an alternative, you can download `idea-admin.sh` via this [https://raw.github
 {% endtab %}
 
 {% tab title="Windows" %}
-Installation of IDEA in Windows is managed by Powershell. Download and execute the following script on your local Windows workstation: [https://raw.githubusercontent.com/awslabs/integrated-digital-engineering-on-aws/main/idea-admin.ps1  ](https://raw.githubusercontent.com/awslabs/integrated-digital-engineering-on-aws/main/idea-admin.ps1)
+Installation of IDEA in Windows is managed by Powershell. Download and execute the following script on your local Windows workstation: \<NO\_PUBLIC\_LINK\_AVAILABLE\_YET>
+
+```
+```
 {% endtab %}
 {% endtabs %}
 
