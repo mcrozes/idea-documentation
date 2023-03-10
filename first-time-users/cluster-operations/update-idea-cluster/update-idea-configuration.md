@@ -122,8 +122,11 @@ Examples:
 
 1. To set a **string** config type: ./idea-admin.sh config set Key=global-settings.string\_val,Type=string,Value=stringcontent --cluster-name \<CLUSTER\_NAME> --aws-region \<REGION>
 2. To set an **integer** config type: ./idea-admin.sh config set Key=global-settings.int\_val,Type=int,Value=12 --cluster-name \<CLUSTER\_NAME> --aws-region \<REGION>
-3. To set a config **with list of strings**: ./idea-admin.sh config set "Key=my\_config.string\_list,Type=list,Value=value1,value2" --cluster-name \<CLUSTER\_NAME> --aws-region \<REGION>
-4. Update multiple config entries: ./idea-admin.sh config set Key=global-settings.string\_val,Type=string,Value=stringcontent\
+3. To set a config **with list of strings**: ./idea-admin.sh config set "Key=my\_config.string\_list,Type=list\<str>,Value=value1,value2" --cluster-name \<CLUSTER\_NAME> --aws-region \<REGION>
+4. To set a config **with list of integers**: ./idea-admin.sh config set "Key=my\_config.string\_list,Type=list\<int>,Value=value1,value2" --cluster-name \<CLUSTER\_NAME> --aws-region \<REGION>
+5. To set a config **with list of decimal/float**: ./idea-admin.sh config set "Key=my\_config.string\_list,Type=list\<float>,Value=value1,value2" --cluster-name \<CLUSTER\_NAME> --aws-region \<REGION>
+6. To set a config **with list of bool**: ./idea-admin.sh config set "Key=my\_config.string\_list,Type=list\<bool>,Value=value1,value2" --cluster-name \<CLUSTER\_NAME> --aws-region \<REGION>
+7. Update multiple config entries: ./idea-admin.sh config set Key=global-settings.string\_val,Type=string,Value=stringcontent\
    "Key=global-settings.integer\_list,Type=list,Value=1,2"\
    "Key=global-settings.string\_list,Type=list,Value=str1,str2"\
    \--cluster-name \<CLUSTER\_NAME>\
