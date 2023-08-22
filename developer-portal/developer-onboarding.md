@@ -13,9 +13,9 @@
 
 Replace the variables in the code snippets below with the following values:
 
-* PYTHON\_VERSION: 3.9.13
+* PYTHON\_VERSION: 3.9.16
 * NODEJS\_VERSION: 16.3.0
-* CDK\_VERSION: 2.40.0
+* CDK\_VERSION: 2.88.0
 {% endhint %}
 
 ## Prepare environment
@@ -23,14 +23,14 @@ Replace the variables in the code snippets below with the following values:
 ### **Python <**PYTHON\_VERSION>
 
 ```bash
-pyenv install --skip-existing <PYTHON_VERSION>
+pyenv install --skip-existing $PYTHON_VERSION
 ```
 
 ### **NodeJS \<NODEJS\_VERSION>**
 
 ```bash
-nvm install <NODEJS_VERSION>
-nvm use <NODEJS_VERSION>
+nvm install $NODEJS_VERSION
+nvm use $NODEJS_VERSION
 ```
 
 #### **AWS CDK \<CDK\_VERSION>**
@@ -44,7 +44,7 @@ Follow the instructions below:
 ```bash
 mkdir -p ~/.idea/lib/idea-cdk && pushd ~/.idea/lib/idea-cdk
 npm init --force --yes
-npm install aws-cdk@<CDK_VERSION> --save
+npm install aws-cdk@$CDK_VERSION --save
 popd
 ```
 
@@ -77,14 +77,14 @@ cd integrated-digital-engineering-on-awsb
 Activate your python virtual environment via:
 
 ```bash
-PYENV_VERSION=<PYTHON_VERSION> python -m venv venv
+PYENV_VERSION=$PYTHON_VERSION python -m venv venv
 source venv/bin/activate
 ```
 
 If your PYENV\_VERSION command is not working for any reason, you can create venv using below command:
 
 ```bash
-$HOME/.pyenv/versions/<PYTHON_VERSION>/bin/python3 -m venv venv
+$HOME/.pyenv/versions/$PYTHON_VERSION/bin/python3 -m venv venv
 ```
 
 ## Install Dev Requirements

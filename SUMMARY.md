@@ -23,10 +23,10 @@
 ## 🤖 Modules
 
 * [What is a module?](modules/what-is-a-module.md)
-* [Virtual Desktop Interfaces](https://app.gitbook.com/o/ewXgnQpSEObr0Vh0WSOj/s/QthiamUzKn8KJLl0hYBf/)
-* [Scale-Out Compute](https://app.gitbook.com/o/ewXgnQpSEObr0Vh0WSOj/s/LGamNPuOYtjAP3GFfRJO/)
-* [Cluster Manager](https://app.gitbook.com/o/ewXgnQpSEObr0Vh0WSOj/s/GtBrWw9T1qCJK2QCOTW2/)
-* [Shared Storage](https://app.gitbook.com/o/ewXgnQpSEObr0Vh0WSOj/s/5SSt4opQQGbm5tAfuEqy/)
+* [Virtual Desktop Interfaces](http://127.0.0.1:5000/o/ewXgnQpSEObr0Vh0WSOj/s/QthiamUzKn8KJLl0hYBf/)
+* [Scale-Out Compute](http://127.0.0.1:5000/o/ewXgnQpSEObr0Vh0WSOj/s/LGamNPuOYtjAP3GFfRJO/)
+* [Cluster Manager](http://127.0.0.1:5000/o/ewXgnQpSEObr0Vh0WSOj/s/GtBrWw9T1qCJK2QCOTW2/)
+* [Shared Storage](http://127.0.0.1:5000/o/ewXgnQpSEObr0Vh0WSOj/s/5SSt4opQQGbm5tAfuEqy/)
 
 ## 👑 Best Practices
 
