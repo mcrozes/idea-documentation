@@ -15,7 +15,7 @@ Replace the variables in the code snippets below with the following values:
 
 * PYTHON\_VERSION: 3.9.16
 * NODEJS\_VERSION: 16.3.0
-* CDK\_VERSION: 2.88.0
+* CDK\_VERSION: 2.93.0
 {% endhint %}
 
 ## Prepare environment
