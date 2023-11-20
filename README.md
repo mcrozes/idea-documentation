@@ -1,5 +1,7 @@
 # What is IDEA?
 
+**ReadMe First:** This project is **NOT** AWS RES ([https://github.com/aws/res](https://github.com/aws/res)). RES is a fork of IDEA and not all features listed on this doc made it to RES. RES Documentation is available on [https://docs.aws.amazon.com/res/latest/ug/overview.html](https://docs.aws.amazon.com/res/latest/ug/overview.html)&#x20;
+
 **I**ntegrated **D**igital **E**ngineering on **A**WS (**IDEA**) empowers teams of engineers, scientists and researchers with a cloud environment to host engineering tools required for end-to-end product development workloads (Computer Aided Design – CAD, Computer Aided Engineering - CAE, Model Based Systems Engineering - MBSE, Electronic Design Automation – EDA). Using this solution, research and development (R\&D) leaders enable engineers and designers to break-through development silos and accelerate the product development process.
 
 With Integrated Digital Engineering on AWS, in a matter of hours engineering application teams can now deploy scalable engineering collaboration chambers customized to meet organizations security requirements for joint development with trusted partners and suppliers. Engineers interact with a catalog of familiar tools seamlessly integrated into an intuitive web portal. Applications tuned engineering workstations and compute clusters are automatically created and then scaled down once work is completed eliminating wasted time and resources.&#x20;
