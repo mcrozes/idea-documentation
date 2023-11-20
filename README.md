@@ -47,7 +47,7 @@ You can access your IDEA cluster using multiple channels such as APIs, Virtual D
 
 ### Linux & Windows Virtual Desktops <a href="#simple-job-submission" id="simple-job-submission"></a>
 
-Control your fleet of virtual desktops easily via the [Virtual Desktop Interface (VDI)](https://app.gitbook.com/o/ewXgnQpSEObr0Vh0WSOj/s/QthiamUzKn8KJLl0hYBf/ "mention")modules. Control what compute/AMIs can be used. Update your fleet in real-time and enable session-sharing to simplify collaboration cross teams.
+Control your fleet of virtual desktops easily via the [Virtual Desktop Interface (VDI)](http://127.0.0.1:5000/o/ewXgnQpSEObr0Vh0WSOj/s/QthiamUzKn8KJLl0hYBf/ "mention")modules. Control what compute/AMIs can be used. Update your fleet in real-time and enable session-sharing to simplify collaboration cross teams.
 
 ### Simple Job Submission <a href="#simple-job-submission" id="simple-job-submission"></a>
 
